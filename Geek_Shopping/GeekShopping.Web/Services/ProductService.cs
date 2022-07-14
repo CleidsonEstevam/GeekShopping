@@ -8,6 +8,12 @@ namespace GeekShopping.Web.Services
     {
         private readonly HttpClient _httpClient;
         public const string BasePath = "api/v1/product";
+
+        public ProductService(HttpClient httpClient)
+        {
+            _httpClient = httpClient ?? throw new ArgumentNullException(nameof(httpClient));
+        }
+
         public async Task<IEnumerable<ProductModel>> FindAllProducts()
         {
             var response = await _httpClient.GetAsync(BasePath);
@@ -21,17 +27,23 @@ namespace GeekShopping.Web.Services
         }
         public async Task<ProductModel> CreateProduct(ProductModel prod)
         {
-            throw new NotImplementedException();
+            var response = await _httpClient.PostAsJson(BasePath, prod);
+            if (response.IsSuccessStatusCode) return await response.ReadContentAs<ProductModel>();
+            else throw new Exception("Erro! Problema encontrado ao iniciar criação na API");
         }
 
         public async Task<ProductModel> UpdateProduct(ProductModel prod)
         {
-            throw new NotImplementedException();
+            var response = await _httpClient.PutAsJson(BasePath, prod);
+            if (response.IsSuccessStatusCode) return await response.ReadContentAs<ProductModel>();
+            else throw new Exception("Erro! Problema encontrado ao iniciar alteração na API");
         }
 
         public async Task<bool> DeleteProduct(long id)
         {
-            throw new NotImplementedException();
+            var response = await _httpClient.DeleteAsync($"{BasePath}/{id}");
+            if (response.IsSuccessStatusCode) return await response.ReadContentAs<bool>();
+            else throw new Exception("Erro! Problema encontrado ao iniciar exclusão na API");
         }
 
 
