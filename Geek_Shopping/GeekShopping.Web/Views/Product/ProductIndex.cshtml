@@ -5,15 +5,15 @@
 <div class="container p-4 border">
     <div class="row p-2">
         <div class="col">
-            <h1 class="text-primary">PRODUCT LIST</h1>
+            <h1 class="text-primary" style="color:#ffc107!important; font-size:30px;">PRODUCTS <i class="fa fa-archive" aria-hidden="true"></i></h1>
         </div>
         <div class="col text-end pt-1">
-            <a asp-action="ProductCreate" class="btn btn-outline-primary">
+            <a asp-action="ProductCreate" class="btn btn-outline-warning">
                 <i class="fas fa-plus"></i>Create New Product
             </a>
         </div>
     </div>
-    <table class="table">
+    <table class="table table-striped">
         <thead>
                 <tr>
                     <th>
@@ -39,6 +39,14 @@
                     </td>
                     <td>
                         @((item.Price).ToString("c"))
+                    </td>
+                    <td>
+                       <a asp-action="ProductEdit" class="btn btn-success" asp-route-id="@item.Id">
+                           <i class="fas fa-edit"></i>
+                       </a>
+                        <a asp-action="ProductDeletw" class="btn btn-danger" asp-route-id="@item.Id">
+                           <i class="fas fa-trash"></i>
+                       </a>
                     </td>
                 </tr>
             }
