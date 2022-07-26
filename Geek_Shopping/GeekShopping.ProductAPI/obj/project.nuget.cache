@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mOYDuzlydOUqH9YH55iU5wjkw+6waNW8RzOTr0HZfn3no1Cvtjiwm8ndzRQ9k2A9dQUrYoi1JjY6N4XPDUdXBQ==",
+  "dgSpecHash": "xb7jIQ/hWnmLw7DI59cu0ADYQ/pLSYOtmhyhlhao+Gr1D4eF5bgJ09I8R56Cb6Dsi56CQ1uAXQh8IJWmCETz0g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\cleid\\Desktop\\Geek\\Geek_Shopping\\GeekShopping.ProductAPI\\GeekShopping.ProductAPI.csproj",
+  "projectFilePath": "C:\\Users\\cleid\\OneDrive\\Área de Trabalho\\Geek\\Geek_Shopping\\GeekShopping.ProductAPI\\GeekShopping.ProductAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cleid\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\cleid\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

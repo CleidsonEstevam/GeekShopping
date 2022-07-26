@@ -1643,11 +1643,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cleid\\Desktop\\Geek\\Geek_Shopping\\GeekShopping.ProductAPI\\GeekShopping.ProductAPI.csproj",
+      "projectUniqueName": "C:\\Users\\cleid\\OneDrive\\Área de Trabalho\\Geek\\Geek_Shopping\\GeekShopping.ProductAPI\\GeekShopping.ProductAPI.csproj",
       "projectName": "GeekShopping.ProductAPI",
-      "projectPath": "C:\\Users\\cleid\\Desktop\\Geek\\Geek_Shopping\\GeekShopping.ProductAPI\\GeekShopping.ProductAPI.csproj",
+      "projectPath": "C:\\Users\\cleid\\OneDrive\\Área de Trabalho\\Geek\\Geek_Shopping\\GeekShopping.ProductAPI\\GeekShopping.ProductAPI.csproj",
       "packagesPath": "C:\\Users\\cleid\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cleid\\Desktop\\Geek\\Geek_Shopping\\GeekShopping.ProductAPI\\obj\\",
+      "outputPath": "C:\\Users\\cleid\\OneDrive\\Área de Trabalho\\Geek\\Geek_Shopping\\GeekShopping.ProductAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\cleid\\AppData\\Roaming\\NuGet\\NuGet.Config",

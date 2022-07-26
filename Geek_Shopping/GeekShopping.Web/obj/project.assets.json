@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cleid\\Desktop\\Geek\\Geek_Shopping\\GeekShopping.Web\\GeekShopping.Web.csproj",
+      "projectUniqueName": "C:\\Users\\cleid\\OneDrive\\Área de Trabalho\\Geek\\Geek_Shopping\\GeekShopping.Web\\GeekShopping.Web.csproj",
       "projectName": "GeekShopping.Web",
-      "projectPath": "C:\\Users\\cleid\\Desktop\\Geek\\Geek_Shopping\\GeekShopping.Web\\GeekShopping.Web.csproj",
+      "projectPath": "C:\\Users\\cleid\\OneDrive\\Área de Trabalho\\Geek\\Geek_Shopping\\GeekShopping.Web\\GeekShopping.Web.csproj",
       "packagesPath": "C:\\Users\\cleid\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cleid\\Desktop\\Geek\\Geek_Shopping\\GeekShopping.Web\\obj\\",
+      "outputPath": "C:\\Users\\cleid\\OneDrive\\Área de Trabalho\\Geek\\Geek_Shopping\\GeekShopping.Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\cleid\\AppData\\Roaming\\NuGet\\NuGet.Config",
