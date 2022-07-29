@@ -4,6 +4,7 @@ using Duende.IdentityServer.Models;
 using Duende.IdentityServer.Services;
 using Duende.IdentityServer.Validation;
 using IdentityModel;
+using IdentityServerHost.Quickstart.UI;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -102,13 +103,13 @@ public class Index : PageModel
             // communicate outcome of consent back to identityserver
             await _interaction.GrantConsentAsync(request, grantedConsent);
 
-            // redirect back to authorization endpoint
-            if (request.IsNativeClient() == true)
-            {
-                // The client is native, so this change in how to
-                // return the response is for better UX for the end user.
-                return this.LoadingPage(Input.ReturnUrl);
-            }
+            //// redirect back to authorization endpoint
+            //if (request.IsNativeClient() == true)
+            //{
+            //    // The client is native, so this change in how to
+            //    // return the response is for better UX for the end user.
+            //    return this.LoadingPage(Input.ReturnUrl);
+            //}
 
             return Redirect(Input.ReturnUrl);
         }

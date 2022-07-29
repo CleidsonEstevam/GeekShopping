@@ -4,10 +4,12 @@ using Duende.IdentityServer.Models;
 using Duende.IdentityServer.Services;
 using Duende.IdentityServer.Stores;
 using Duende.IdentityServer.Test;
+using IdentityServerHost.Quickstart.UI;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+
 
 namespace foo.Pages.Login;
 
@@ -70,13 +72,13 @@ public class Index : PageModel
                 // this will send back an access denied OIDC error response to the client.
                 await _interaction.DenyAuthorizationAsync(context, AuthorizationError.AccessDenied);
 
-                // we can trust model.ReturnUrl since GetAuthorizationContextAsync returned non-null
-                if (context.IsNativeClient())
-                {
-                    // The client is native, so this change in how to
-                    // return the response is for better UX for the end user.
-                    return this.LoadingPage(Input.ReturnUrl);
-                }
+                //// we can trust model.ReturnUrl since GetAuthorizationContextAsync returned non-null
+                //if (context.IsNativeClient())
+                //{
+                //    // The client is native, so this change in how to
+                //    // return the response is for better UX for the end user.
+                //    return this.LoadingPage(Input.ReturnUrl);
+                //}
 
                 return Redirect(Input.ReturnUrl);
             }
@@ -117,12 +119,12 @@ public class Index : PageModel
 
                 if (context != null)
                 {
-                    if (context.IsNativeClient())
-                    {
-                        // The client is native, so this change in how to
-                        // return the response is for better UX for the end user.
-                        return this.LoadingPage(Input.ReturnUrl);
-                    }
+                    //if (context.IsNativeClient())
+                    //{
+                    //    // The client is native, so this change in how to
+                    //    // return the response is for better UX for the end user.
+                    //    return this.LoadingPage(Input.ReturnUrl);
+                    //}
 
                     // we can trust model.ReturnUrl since GetAuthorizationContextAsync returned non-null
                     return Redirect(Input.ReturnUrl);

@@ -4,6 +4,7 @@ using Duende.IdentityServer.Events;
 using Duende.IdentityServer.Services;
 using Duende.IdentityServer.Test;
 using IdentityModel;
+using IdentityServerHost.Quickstart.UI;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -105,12 +106,12 @@ public class Callback : PageModel
 
         if (context != null)
         {
-            if (context.IsNativeClient())
-            {
-                // The client is native, so this change in how to
-                // return the response is for better UX for the end user.
-                return this.LoadingPage(returnUrl);
-            }
+            //if (context.IsNativeClient())
+            //{
+            //    // The client is native, so this change in how to
+            //    // return the response is for better UX for the end user.
+            //    return this.LoadingPage(returnUrl);
+            //}
         }
 
         return Redirect(returnUrl);

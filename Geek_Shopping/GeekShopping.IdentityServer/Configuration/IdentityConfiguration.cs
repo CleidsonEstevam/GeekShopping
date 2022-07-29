@@ -6,7 +6,7 @@ namespace GeekShopping.IdentityServer.Configuration
     public static class IdentityConfiguration
     {
         public const string Admin = "Admin";
-        public const string Custumer = "Custumer";
+        public const string Client = "Client";
 
 
         //Identity Resourse => (Recursos a serem protegidos pelo Identity Server)
@@ -30,7 +30,7 @@ namespace GeekShopping.IdentityServer.Configuration
         };
 
         //Client => (Quem vai consumir os recursos)
-        public static IEnumerable<Client> Client => new List<Client>
+        public static IEnumerable<Client> Clients => new List<Client>
         {
             //Client generico
             new Client
@@ -47,8 +47,8 @@ namespace GeekShopping.IdentityServer.Configuration
                 ClientId = "geek_shopping",
                 ClientSecrets = { new Secret("my_secret".Sha256())},
                 AllowedGrantTypes = GrantTypes.Code,
-                RedirectUris = { "http://localhost:5094/signin-oidc" },
-                PostLogoutRedirectUris = { "http://localhost:5094/signout-callback-oidc"},
+                RedirectUris = { "https://localhost:4430/signin-oidc" },
+                PostLogoutRedirectUris = { "https://localhost:4430/signout-callback-oidc"},
                 AllowedScopes = new List<string>
                 {
                     IdentityServerConstants.StandardScopes.OpenId,

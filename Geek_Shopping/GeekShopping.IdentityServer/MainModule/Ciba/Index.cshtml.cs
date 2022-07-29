@@ -3,6 +3,7 @@
 
 using Duende.IdentityServer.Models;
 using Duende.IdentityServer.Services;
+using IdentityServerHost.Quickstart.UI;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
