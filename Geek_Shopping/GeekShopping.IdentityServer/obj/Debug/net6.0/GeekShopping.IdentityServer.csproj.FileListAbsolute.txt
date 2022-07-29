@@ -50,3 +50,5 @@ C:\Users\cleid\OneDrive\Área de Trabalho\Geek\Geek_Shopping\GeekShopping.Identi
 C:\Users\cleid\OneDrive\Área de Trabalho\Geek\Geek_Shopping\GeekShopping.IdentityServer\obj\Debug\net6.0\GeekShopping.IdentityServer.pdb
 C:\Users\cleid\OneDrive\Área de Trabalho\Geek\Geek_Shopping\GeekShopping.IdentityServer\obj\Debug\net6.0\GeekShopping.IdentityServer.genruntimeconfig.cache
 C:\Users\cleid\OneDrive\Área de Trabalho\Geek\Geek_Shopping\GeekShopping.IdentityServer\obj\Debug\net6.0\ref\GeekShopping.IdentityServer.dll
+C:\Users\cleid\OneDrive\Área de Trabalho\Geek\Geek_Shopping\GeekShopping.IdentityServer\bin\Debug\net6.0\Humanizer.dll
+C:\Users\cleid\OneDrive\Área de Trabalho\Geek\Geek_Shopping\GeekShopping.IdentityServer\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
