@@ -1,4 +1,5 @@
-﻿using Duende.IdentityServer.Models;
+﻿using Duende.IdentityServer;
+using Duende.IdentityServer.Models;
 
 namespace GeekShopping.IdentityServer.Configuration
 {
@@ -31,13 +32,32 @@ namespace GeekShopping.IdentityServer.Configuration
         //Client => (Quem vai consumir os recursos)
         public static IEnumerable<Client> Client => new List<Client>
         {
+            //Client generico
             new Client
             {
                 ClientId = "client",
                 ClientSecrets = { new Secret("my_secret".Sha256())},
                 AllowedGrantTypes = GrantTypes.ClientCredentials,
                 AllowedScopes = {"read","write","profile" }
+            },
+
+            //Client especifico
+             new Client
+            {
+                ClientId = "geek_shopping",
+                ClientSecrets = { new Secret("my_secret".Sha256())},
+                AllowedGrantTypes = GrantTypes.Code,
+                RedirectUris = { "http://localhost:5094/signin-oidc" },
+                PostLogoutRedirectUris = { "http://localhost:5094/signout-callback-oidc"},
+                AllowedScopes = new List<string>
+                {
+                    IdentityServerConstants.StandardScopes.OpenId,
+                    IdentityServerConstants.StandardScopes.Profile,
+                    IdentityServerConstants.StandardScopes.Email,
+                    "geek_shopping"
+                }
             }
         };
+
     }
 }
