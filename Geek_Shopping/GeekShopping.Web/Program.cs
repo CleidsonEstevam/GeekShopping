@@ -25,7 +25,7 @@ builder.Services.AddAuthentication(options =>
          options.TokenValidationParameters.RoleClaimType = "role";
          options.Scope.Add("geek_shopping");
          options.SaveTokens = true;
-     };
+     });
 
 
 builder.Services.AddHttpClient<IProductService, ProductService>(c => c.BaseAddress = new Uri(builder.Configuration["ServiceURLs:ProductAPI"]));
