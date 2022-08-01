@@ -7,32 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="MainModule\Account\AccessDenied.cshtml" />
-    <None Include="MainModule\Account\Login\Index.cshtml" />
-    <None Include="MainModule\Account\Logout\Index.cshtml" />
-    <None Include="MainModule\Account\Logout\LoggedOut.cshtml" />
-    <None Include="MainModule\Ciba\All.cshtml" />
-    <None Include="MainModule\Ciba\Consent.cshtml" />
-    <None Include="MainModule\Ciba\Index.cshtml" />
-    <None Include="MainModule\Ciba\_ScopeListItem.cshtml" />
-    <None Include="MainModule\Consent\Index.cshtml" />
-    <None Include="MainModule\Consent\_ScopeListItem.cshtml" />
-    <None Include="MainModule\Device\Index.cshtml" />
-    <None Include="MainModule\Device\Success.cshtml" />
-    <None Include="MainModule\Device\_ScopeListItem.cshtml" />
-    <None Include="MainModule\Diagnostics\Index.cshtml" />
-    <None Include="MainModule\ExternalLogin\Callback.cshtml" />
-    <None Include="MainModule\ExternalLogin\Challenge.cshtml" />
-    <None Include="MainModule\Grants\Index.cshtml" />
-    <None Include="MainModule\Home\Error\Index.cshtml" />
-    <None Include="MainModule\Index.cshtml" />
-    <None Include="MainModule\Redirect\Index.cshtml" />
-    <None Include="MainModule\ServerSideSessions\Index.cshtml" />
-    <None Include="MainModule\Shared\_Layout.cshtml" />
-    <None Include="MainModule\Shared\_Nav.cshtml" />
-    <None Include="MainModule\Shared\_ValidationSummary.cshtml" />
-    <None Include="MainModule\_ViewImports.cshtml" />
-    <None Include="MainModule\_ViewStart.cshtml" />
     <None Include="Views\Home\Index.cshtml" />
     <None Include="Views\Home\Privacy.cshtml" />
     <None Include="Views\Shared\Error.cshtml" />
@@ -83,14 +57,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Duende.IdentityServer.AspNetIdentity" Version="6.1.2" />
-    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.7" />
-    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.7" />
+    <PackageReference Include="Duende.IdentityServer.AspNetIdentity" Version="5.2.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.7">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="6.0.2" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="6.0.0" />
   </ItemGroup>
 
 </Project>

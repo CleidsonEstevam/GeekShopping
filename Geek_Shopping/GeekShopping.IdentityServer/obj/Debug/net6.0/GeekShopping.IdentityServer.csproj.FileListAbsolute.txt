@@ -9,6 +9,7 @@ C:\Users\cleid\OneDrive\Área de Trabalho\Geek\Geek_Shopping\GeekShopping.Identi
 C:\Users\cleid\OneDrive\Área de Trabalho\Geek\Geek_Shopping\GeekShopping.IdentityServer\obj\Debug\net6.0\GeekShopping.IdentityServer.RazorAssemblyInfo.cs
 C:\Users\cleid\OneDrive\Área de Trabalho\Geek\Geek_Shopping\GeekShopping.IdentityServer\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\cleid\OneDrive\Área de Trabalho\Geek\Geek_Shopping\GeekShopping.IdentityServer\bin\Debug\net6.0\appsettings.json
+C:\Users\cleid\OneDrive\Área de Trabalho\Geek\Geek_Shopping\GeekShopping.IdentityServer\bin\Debug\net6.0\keys\is-signing-key-BFAC15D60934D125E4A15520E7A43A69.json
 C:\Users\cleid\OneDrive\Área de Trabalho\Geek\Geek_Shopping\GeekShopping.IdentityServer\bin\Debug\net6.0\GeekShopping.IdentityServer.staticwebassets.runtime.json
 C:\Users\cleid\OneDrive\Área de Trabalho\Geek\Geek_Shopping\GeekShopping.IdentityServer\bin\Debug\net6.0\GeekShopping.IdentityServer.exe
 C:\Users\cleid\OneDrive\Área de Trabalho\Geek\Geek_Shopping\GeekShopping.IdentityServer\bin\Debug\net6.0\GeekShopping.IdentityServer.deps.json
@@ -18,19 +19,16 @@ C:\Users\cleid\OneDrive\Área de Trabalho\Geek\Geek_Shopping\GeekShopping.Identi
 C:\Users\cleid\OneDrive\Área de Trabalho\Geek\Geek_Shopping\GeekShopping.IdentityServer\bin\Debug\net6.0\Duende.IdentityServer.dll
 C:\Users\cleid\OneDrive\Área de Trabalho\Geek\Geek_Shopping\GeekShopping.IdentityServer\bin\Debug\net6.0\Duende.IdentityServer.AspNetIdentity.dll
 C:\Users\cleid\OneDrive\Área de Trabalho\Geek\Geek_Shopping\GeekShopping.IdentityServer\bin\Debug\net6.0\Duende.IdentityServer.Storage.dll
+C:\Users\cleid\OneDrive\Área de Trabalho\Geek\Geek_Shopping\GeekShopping.IdentityServer\bin\Debug\net6.0\Humanizer.dll
 C:\Users\cleid\OneDrive\Área de Trabalho\Geek\Geek_Shopping\GeekShopping.IdentityServer\bin\Debug\net6.0\IdentityModel.dll
 C:\Users\cleid\OneDrive\Área de Trabalho\Geek\Geek_Shopping\GeekShopping.IdentityServer\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
-C:\Users\cleid\OneDrive\Área de Trabalho\Geek\Geek_Shopping\GeekShopping.IdentityServer\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
-C:\Users\cleid\OneDrive\Área de Trabalho\Geek\Geek_Shopping\GeekShopping.IdentityServer\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Users\cleid\OneDrive\Área de Trabalho\Geek\Geek_Shopping\GeekShopping.IdentityServer\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\cleid\OneDrive\Área de Trabalho\Geek\Geek_Shopping\GeekShopping.IdentityServer\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.UI.dll
 C:\Users\cleid\OneDrive\Área de Trabalho\Geek\Geek_Shopping\GeekShopping.IdentityServer\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\cleid\OneDrive\Área de Trabalho\Geek\Geek_Shopping\GeekShopping.IdentityServer\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\cleid\OneDrive\Área de Trabalho\Geek\Geek_Shopping\GeekShopping.IdentityServer\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\cleid\OneDrive\Área de Trabalho\Geek\Geek_Shopping\GeekShopping.IdentityServer\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\cleid\OneDrive\Área de Trabalho\Geek\Geek_Shopping\GeekShopping.IdentityServer\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
-C:\Users\cleid\OneDrive\Área de Trabalho\Geek\Geek_Shopping\GeekShopping.IdentityServer\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Embedded.dll
-C:\Users\cleid\OneDrive\Área de Trabalho\Geek\Geek_Shopping\GeekShopping.IdentityServer\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
-C:\Users\cleid\OneDrive\Área de Trabalho\Geek\Geek_Shopping\GeekShopping.IdentityServer\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\cleid\OneDrive\Área de Trabalho\Geek\Geek_Shopping\GeekShopping.IdentityServer\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
 C:\Users\cleid\OneDrive\Área de Trabalho\Geek\Geek_Shopping\GeekShopping.IdentityServer\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
 C:\Users\cleid\OneDrive\Área de Trabalho\Geek\Geek_Shopping\GeekShopping.IdentityServer\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
@@ -50,5 +48,3 @@ C:\Users\cleid\OneDrive\Área de Trabalho\Geek\Geek_Shopping\GeekShopping.Identi
 C:\Users\cleid\OneDrive\Área de Trabalho\Geek\Geek_Shopping\GeekShopping.IdentityServer\obj\Debug\net6.0\GeekShopping.IdentityServer.pdb
 C:\Users\cleid\OneDrive\Área de Trabalho\Geek\Geek_Shopping\GeekShopping.IdentityServer\obj\Debug\net6.0\GeekShopping.IdentityServer.genruntimeconfig.cache
 C:\Users\cleid\OneDrive\Área de Trabalho\Geek\Geek_Shopping\GeekShopping.IdentityServer\obj\Debug\net6.0\ref\GeekShopping.IdentityServer.dll
-C:\Users\cleid\OneDrive\Área de Trabalho\Geek\Geek_Shopping\GeekShopping.IdentityServer\bin\Debug\net6.0\Humanizer.dll
-C:\Users\cleid\OneDrive\Área de Trabalho\Geek\Geek_Shopping\GeekShopping.IdentityServer\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
