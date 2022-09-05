@@ -7,25 +7,28 @@
         <div class="col">
             <h1 class="text-primary" style="color:#ffc107!important; font-size:30px;">PRODUCTS <i class="fa fa-archive" aria-hidden="true"></i></h1>
         </div>
-        <div class="col text-end pt-1">
-            <a asp-action="ProductCreate" class="btn btn-outline-warning">
-                <i class="fas fa-plus"></i>Create New Product
-            </a>
-        </div>
+        @if (User.IsInRole("Admin"))
+        {
+            <div class="col text-end pt-1">
+                <a asp-action="ProductCreate" class="btn btn-outline-warning">
+                    <i class="fas fa-plus"></i>Create New Product
+                </a>
+            </div>
+        }
     </div>
     <table class="table table-striped">
         <thead>
-                <tr>
-                    <th>
-                        Name
-                    </th>
-                    <th>
-                        Category
-                    </th>
-                    <th>
-                        Price
-                    </th>
-                </tr>
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Category
+                </th>
+                <th>
+                    Price
+                </th>
+            </tr>
         </thead>
         <tbody>
             @foreach (var item in Model)
@@ -41,14 +44,14 @@
                         @((item.Price).ToString("c"))
                     </td>
                     <td>
-                        @if(User.IsInRole("Admin"))
+                        @if (User.IsInRole("Admin"))
                         {
-                       <a asp-action="ProductUpdate" class="btn btn-success" asp-route-id="@item.Id">
-                           <i class="fas fa-edit"></i>
-                       </a>
-                        <a asp-action="ProductDelete" class="btn btn-danger" asp-route-id="@item.Id">
-                           <i class="fas fa-trash"></i>
-                       </a>
+                            <a asp-action="ProductUpdate" class="btn btn-success" asp-route-id="@item.Id">
+                                <i class="fas fa-edit"></i>
+                            </a>
+                            <a asp-action="ProductDelete" class="btn btn-danger" asp-route-id="@item.Id">
+                                <i class="fas fa-trash"></i>
+                            </a>
                         }
                     </td>
                 </tr>

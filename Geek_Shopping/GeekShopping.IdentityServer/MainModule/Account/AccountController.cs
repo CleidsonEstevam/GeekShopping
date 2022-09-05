@@ -22,7 +22,6 @@ using GeekShopping.IdentityServer.Model;
 using GeekShopping.IdentityServer.MainModule.Account;
 using System.Collections.Generic;
 using System.Security.Claims;
-using GeekShopping.IdentityServer.Model.Context;
 
 namespace IdentityServerHost.Quickstart.UI
 {

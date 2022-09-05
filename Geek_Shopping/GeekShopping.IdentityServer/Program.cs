@@ -11,17 +11,16 @@ var builder = WebApplication.CreateBuilder(args);
 
 #region "Config StringConnection"
 var connection = builder.Configuration["MySqlConnection:MysqlConnectionString"];
-builder.Services.AddDbContext<MySqlContext>(options => options.UseMySql(connection, new MySqlServerVersion(new Version(8, 0, 25))));
+builder.Services.AddDbContext<MySQLContext>(options => options.UseMySql(connection, new MySqlServerVersion(new Version(8, 0, 25))));
 #endregion
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddScoped<IDbInitializer, Initializer>();
-builder.Services.AddScoped<IProfileService, ProfileService>();
+
 
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
-    .AddEntityFrameworkStores<MySqlContext>()
+    .AddEntityFrameworkStores<MySQLContext>()
     .AddDefaultTokenProviders();
 
 var bld = builder.Services.AddIdentityServer(options =>
@@ -31,18 +30,18 @@ var bld = builder.Services.AddIdentityServer(options =>
     options.Events.RaiseFailureEvents = true;
     options.Events.RaiseSuccessEvents = true;
     options.EmitStaticAudienceClaim = true;
-
-}).AddInMemoryIdentityResources(IdentityConfiguration.IdentityResource)
+}).AddInMemoryIdentityResources(
+   IdentityConfiguration.IdentityResources)
    .AddInMemoryApiScopes(IdentityConfiguration.ApiScopes)
    .AddInMemoryClients(IdentityConfiguration.Clients)
    .AddAspNetIdentity<ApplicationUser>();
 
-
+builder.Services.AddScoped<IDbInitializer, DbInitializer>();
+builder.Services.AddScoped<IProfileService, ProfileService>();
 
 bld.AddDeveloperSigningCredential();
 
 var app = builder.Build();
-var dbInitializeService = app.Services.CreateScope().ServiceProvider.GetService<IDbInitializer>();
 
 // Configure the HTTP request pipeline.
 
@@ -65,6 +64,10 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
-dbInitializeService.Initializer();
+var dbInitializeService = app.Services.CreateScope().ServiceProvider.GetService<IDbInitializer>();
+
+
+#pragma warning disable CS8602 // Dereference of a possibly null reference.
+dbInitializeService.Initialize();
 
 app.Run();

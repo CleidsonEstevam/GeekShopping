@@ -7,20 +7,22 @@ using System.Security.Claims;
 
 namespace GeekShopping.IdentityServer.Initializer
 {
-    public class Initializer : IDbInitializer
+    public class DbInitializer : IDbInitializer
     {
-        private readonly MySqlContext  _context;
+        private readonly MySQLContext _context;
         private readonly UserManager<ApplicationUser> _user;
         private readonly RoleManager<IdentityRole> _role;
 
-        public Initializer(MySqlContext context, UserManager<ApplicationUser> user, RoleManager<IdentityRole> role)
+        public DbInitializer(MySQLContext context,
+            UserManager<ApplicationUser> user,
+            RoleManager<IdentityRole> role)
         {
             _context = context;
             _user = user;
             _role = role;
         }
 
-        void IDbInitializer.Initializer()
+        public void Initialize()
         {
             if (_role.FindByNameAsync(IdentityConfiguration.Admin).Result != null) return;
             _role.CreateAsync(new IdentityRole(IdentityConfiguration.Admin)).GetAwaiter().GetResult();
@@ -66,7 +68,6 @@ namespace GeekShopping.IdentityServer.Initializer
                 new Claim(JwtClaimTypes.FamilyName,client.LastName),
                 new Claim(JwtClaimTypes.Role, IdentityConfiguration.Client),
             }).Result;
-
         }
     }
 }

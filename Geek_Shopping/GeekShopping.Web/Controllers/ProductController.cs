@@ -23,7 +23,6 @@ namespace GeekShopping.Web.Controllers
             var products = await _productService.FindAllProducts(token);
             return View(products);
         }
-
         public async Task<IActionResult> ProductCreate()
         {
             return View();
@@ -31,6 +30,7 @@ namespace GeekShopping.Web.Controllers
 
         [Authorize]
         [HttpPost]
+        [Authorize(Roles = Role.Admin)]
         public async Task<IActionResult> ProductCreate(ProductModel model)
         {
             if (ModelState.IsValid)
