@@ -25,8 +25,10 @@ namespace GeekShopping.IdentityServer.Initializer
         public void Initialize()
         {
             if (_role.FindByNameAsync(IdentityConfiguration.Admin).Result != null) return;
-            _role.CreateAsync(new IdentityRole(IdentityConfiguration.Admin)).GetAwaiter().GetResult();
-            _role.CreateAsync(new IdentityRole(IdentityConfiguration.Client)).GetAwaiter().GetResult();
+            _role.CreateAsync(new IdentityRole(
+                IdentityConfiguration.Admin)).GetAwaiter().GetResult();
+            _role.CreateAsync(new IdentityRole(
+                IdentityConfiguration.Client)).GetAwaiter().GetResult();
 
             ApplicationUser admin = new ApplicationUser()
             {
@@ -37,17 +39,17 @@ namespace GeekShopping.IdentityServer.Initializer
                 FirstName = "Cleidson",
                 LastName = "Admin"
             };
-            _user.CreateAsync(admin, "Cleidson$123").GetAwaiter().GetResult();
-            _user.AddToRoleAsync(admin, IdentityConfiguration.Admin).GetAwaiter().GetResult();
 
+            _user.CreateAsync(admin, "Cleidson$123").GetAwaiter().GetResult();
+            _user.AddToRoleAsync(admin,
+                IdentityConfiguration.Admin).GetAwaiter().GetResult();
             var adminClaims = _user.AddClaimsAsync(admin, new Claim[]
             {
                 new Claim(JwtClaimTypes.Name, $"{admin.FirstName} {admin.LastName}"),
-                new Claim(JwtClaimTypes.GivenName,admin.FirstName),
-                new Claim(JwtClaimTypes.FamilyName,admin.LastName),
-                new Claim(JwtClaimTypes.Role, IdentityConfiguration.Admin),
+                new Claim(JwtClaimTypes.GivenName, admin.FirstName),
+                new Claim(JwtClaimTypes.FamilyName, admin.LastName),
+                new Claim(JwtClaimTypes.Role, IdentityConfiguration.Admin)
             }).Result;
-
 
             ApplicationUser client = new ApplicationUser()
             {
@@ -56,17 +58,18 @@ namespace GeekShopping.IdentityServer.Initializer
                 EmailConfirmed = true,
                 PhoneNumber = "+55 (14) 98819-1240",
                 FirstName = "Cleidson",
-                LastName = "client"
+                LastName = "Client"
             };
-            _user.CreateAsync(client, "Cleidson$123").GetAwaiter().GetResult();
-            _user.AddToRoleAsync(client, IdentityConfiguration.Admin).GetAwaiter().GetResult();
 
+            _user.CreateAsync(client, "Cleidson$123").GetAwaiter().GetResult();
+            _user.AddToRoleAsync(client,
+                IdentityConfiguration.Client).GetAwaiter().GetResult();
             var clientClaims = _user.AddClaimsAsync(client, new Claim[]
             {
                 new Claim(JwtClaimTypes.Name, $"{client.FirstName} {client.LastName}"),
-                new Claim(JwtClaimTypes.GivenName,client.FirstName),
-                new Claim(JwtClaimTypes.FamilyName,client.LastName),
-                new Claim(JwtClaimTypes.Role, IdentityConfiguration.Client),
+                new Claim(JwtClaimTypes.GivenName, client.FirstName),
+                new Claim(JwtClaimTypes.FamilyName, client.LastName),
+                new Claim(JwtClaimTypes.Role, IdentityConfiguration.Client)
             }).Result;
         }
     }

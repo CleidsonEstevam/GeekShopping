@@ -17,8 +17,6 @@ builder.Services.AddDbContext<MySQLContext>(options => options.UseMySql(connecti
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-
-
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
     .AddEntityFrameworkStores<MySQLContext>()
     .AddDefaultTokenProviders();
@@ -44,8 +42,6 @@ bld.AddDeveloperSigningCredential();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-
-
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
@@ -65,7 +61,6 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 var dbInitializeService = app.Services.CreateScope().ServiceProvider.GetService<IDbInitializer>();
-
 
 #pragma warning disable CS8602 // Dereference of a possibly null reference.
 dbInitializeService.Initialize();
