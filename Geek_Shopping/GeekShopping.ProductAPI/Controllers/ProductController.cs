@@ -24,7 +24,6 @@ namespace GeekShopping.ProductAPI.Controllers
         }
 
         [HttpGet("{id}")]
-        [Authorize]
         public async Task<ActionResult<ProductDTO>> FindById(long id)
         {
             var product = await _repository.FindById(id);
