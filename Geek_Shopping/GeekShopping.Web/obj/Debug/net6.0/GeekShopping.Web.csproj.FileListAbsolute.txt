@@ -381,6 +381,17 @@ C:\Users\cleid\OneDrive\Área de Trabalho\Geek\Geek_Shopping\GeekShopping.Web\ob
 C:\Users\cleid\OneDrive\Área de Trabalho\Geek\Geek_Shopping\GeekShopping.Web\obj\Debug\net6.0\GeekShopping.Web.pdb
 C:\Users\cleid\OneDrive\Área de Trabalho\Geek\Geek_Shopping\GeekShopping.Web\obj\Debug\net6.0\GeekShopping.Web.genruntimeconfig.cache
 C:\Users\cleid\OneDrive\Área de Trabalho\Geek\Geek_Shopping\GeekShopping.Web\obj\Debug\net6.0\ref\GeekShopping.Web.dll
+C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\obj\Debug\net6.0\GeekShopping.Web.csproj.AssemblyReference.cache
+C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\obj\Debug\net6.0\GeekShopping.Web.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\obj\Debug\net6.0\GeekShopping.Web.AssemblyInfoInputs.cache
+C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\obj\Debug\net6.0\GeekShopping.Web.AssemblyInfo.cs
+C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\obj\Debug\net6.0\GeekShopping.Web.csproj.CoreCompileInputs.cache
+C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\obj\Debug\net6.0\GeekShopping.Web.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\obj\Debug\net6.0\GeekShopping.Web.RazorAssemblyInfo.cache
+C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\obj\Debug\net6.0\GeekShopping.Web.RazorAssemblyInfo.cs
+C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\Ecommerce.CartAPI.deps.json
+C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\Ecommerce.CartAPI.runtimeconfig.json
+C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\Ecommerce.CartAPI.exe
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\appsettings.json
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\GeekShopping.Web.staticwebassets.runtime.json
@@ -677,6 +688,12 @@ C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\refs\System.Xml.XPath.dll
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\refs\System.Xml.XPath.XDocument.dll
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\refs\WindowsBase.dll
+C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\System.Web.Http.dll
+C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\System.Web.Http.WebHost.dll
+C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll
@@ -684,14 +701,28 @@ C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\Microsoft.CodeAnalysis.dll
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.dll
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\Microsoft.Web.Infrastructure.dll
+C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\MySqlConnector.dll
+C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\Swashbuckle.AspNetCore.Annotations.dll
+C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\Swashbuckle.Core.dll
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\WebActivatorEx.dll
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.resources.dll
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.resources.dll
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.resources.dll
@@ -718,15 +749,8 @@ C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\obj\Debug\net6.0\GeekShopping.Web.csproj.AssemblyReference.cache
-C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\obj\Debug\net6.0\GeekShopping.Web.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\obj\Debug\net6.0\GeekShopping.Web.AssemblyInfoInputs.cache
-C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\obj\Debug\net6.0\GeekShopping.Web.AssemblyInfo.cs
-C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\obj\Debug\net6.0\GeekShopping.Web.csproj.CoreCompileInputs.cache
-C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\obj\Debug\net6.0\GeekShopping.Web.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\obj\Debug\net6.0\GeekShopping.Web.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\obj\Debug\net6.0\GeekShopping.Web.RazorAssemblyInfo.cache
-C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\obj\Debug\net6.0\GeekShopping.Web.RazorAssemblyInfo.cs
+C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\Ecommerce.CartAPI.dll
+C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\bin\Debug\net6.0\Ecommerce.CartAPI.pdb
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\obj\Debug\net6.0\staticwebassets.development.json
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Web\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css

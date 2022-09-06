@@ -1,11 +1,23 @@
 {
   "Version": 1,
-  "Hash": "8dcrCPW+5irfhYuQCLjSWGBwYNRVbgEt/h2Lwkxt8IM=",
+  "Hash": "OXr3ibNw41bZ4bkbxjUYfBEbnl1w4BU6frxQFa025sg=",
   "Source": "GeekShopping.Web",
   "BasePath": "_content/GeekShopping.Web",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\cleidson.silva\\Desktop\\GeekShopping\\Geek_Shopping\\Ecommerce.CartAPI\\Ecommerce.CartAPI.csproj",
+      "Version": 2,
+      "Source": "Ecommerce.CartAPI",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier"
+    }
+  ],
   "DiscoveryPatterns": [
     {
       "Name": "GeekShopping.Web\\wwwroot",

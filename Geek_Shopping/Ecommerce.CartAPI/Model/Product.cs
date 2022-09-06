@@ -8,6 +8,10 @@ namespace Ecommerce.CartAPI.Model
     [Table("product")]
     public class Product : BaseEntity
     {
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.None)]
+        [Column("id")]
+        public long Id { get; set; }
+
         [Column("name")]
         [Required]
         [StringLength(150)]
