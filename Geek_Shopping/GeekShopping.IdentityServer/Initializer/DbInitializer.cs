@@ -1,11 +1,11 @@
-﻿using GeekShopping.IdentityServer.Configuration;
-using GeekShopping.IdentityServer.Model;
-using GeekShopping.IdentityServer.Model.Context;
+﻿using Ecommerce.IdentityServer.Configuration;
+using Ecommerce.IdentityServer.Model;
+using Ecommerce.IdentityServer.Model.Context;
 using IdentityModel;
 using Microsoft.AspNetCore.Identity;
 using System.Security.Claims;
 
-namespace GeekShopping.IdentityServer.Initializer
+namespace Ecommerce.IdentityServer.Initializer
 {
     public class DbInitializer : IDbInitializer
     {

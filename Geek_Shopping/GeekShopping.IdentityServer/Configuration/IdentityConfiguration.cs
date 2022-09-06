@@ -2,7 +2,7 @@
 using Duende.IdentityServer.Models;
 using System.Collections.Generic;
 
-namespace GeekShopping.IdentityServer.Configuration
+namespace Ecommerce.IdentityServer.Configuration
 {
     public static class IdentityConfiguration
     {

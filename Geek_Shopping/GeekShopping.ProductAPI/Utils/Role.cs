@@ -1,4 +1,4 @@
-﻿namespace GeekShopping.ProductAPI.Utils
+﻿namespace Ecommerce.ProductAPI.Utils
 {
     public class Role
     {

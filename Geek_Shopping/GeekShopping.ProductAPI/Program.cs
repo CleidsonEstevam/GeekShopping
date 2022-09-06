@@ -1,8 +1,8 @@
 using AutoMapper;
-using GeekShopping.ProductAPI.Config;
-using GeekShopping.ProductAPI.Model.Context;
-using GeekShopping.ProductAPI.Repository;
-using GeekShopping.ProductAPI.Repository.Interface;
+using Ecommerce.ProductAPI.Config;
+using Ecommerce.ProductAPI.Model.Context;
+using Ecommerce.ProductAPI.Repository;
+using Ecommerce.ProductAPI.Repository.Interface;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
@@ -50,7 +50,7 @@ builder.Services.AddAuthorization(options =>
 #region "Config. Swagger"
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "GeekShopping.ProductAPI", Version = "v1" });
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Ecommerce.ProductAPI", Version = "v1" });
     c.EnableAnnotations();
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {

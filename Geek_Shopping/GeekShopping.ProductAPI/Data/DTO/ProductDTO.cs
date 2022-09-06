@@ -1,4 +1,4 @@
-﻿namespace GeekShopping.ProductAPI.Data.DTO
+﻿namespace Ecommerce.ProductAPI.Data.DTO
 {
     public class ProductDTO 
     {

@@ -1,10 +1,10 @@
-﻿using GeekShopping.ProductAPI.Data.DTO;
-using GeekShopping.ProductAPI.Repository.Interface;
-using GeekShopping.ProductAPI.Utils;
+﻿using Ecommerce.ProductAPI.Data.DTO;
+using Ecommerce.ProductAPI.Repository.Interface;
+using Ecommerce.ProductAPI.Utils;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace GeekShopping.ProductAPI.Controllers
+namespace Ecommerce.ProductAPI.Controllers
 {
     [Route("api/v1/[controller]")]
     [ApiController]

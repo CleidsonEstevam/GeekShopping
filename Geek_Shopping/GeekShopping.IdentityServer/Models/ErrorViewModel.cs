@@ -1,6 +1,6 @@
 using System;
 
-namespace GeekShopping.IdentityServer.Models
+namespace Ecommerce.IdentityServer.Models
 {
     public class ErrorViewModel
     {

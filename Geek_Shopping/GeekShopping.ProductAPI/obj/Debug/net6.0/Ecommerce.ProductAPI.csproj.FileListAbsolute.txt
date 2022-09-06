@@ -1,3 +1,10 @@
+C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.ProductAPI\obj\Debug\net6.0\Ecommerce.ProductAPI.csproj.AssemblyReference.cache
+C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.ProductAPI\obj\Debug\net6.0\Ecommerce.ProductAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.ProductAPI\obj\Debug\net6.0\Ecommerce.ProductAPI.AssemblyInfoInputs.cache
+C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.ProductAPI\obj\Debug\net6.0\Ecommerce.ProductAPI.AssemblyInfo.cs
+C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.ProductAPI\obj\Debug\net6.0\Ecommerce.ProductAPI.csproj.CoreCompileInputs.cache
+C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.ProductAPI\obj\Debug\net6.0\Ecommerce.ProductAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.ProductAPI\obj\Debug\net6.0\Ecommerce.ProductAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.ProductAPI\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.ProductAPI\bin\Debug\net6.0\appsettings.json
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.ProductAPI\bin\Debug\net6.0\Ecommerce.ProductAPI.exe
@@ -34,13 +41,6 @@ C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.ProductA
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.ProductAPI\bin\Debug\net6.0\Swashbuckle.Core.dll
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.ProductAPI\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.ProductAPI\bin\Debug\net6.0\WebActivatorEx.dll
-C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.ProductAPI\obj\Debug\net6.0\Ecommerce.ProductAPI.csproj.AssemblyReference.cache
-C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.ProductAPI\obj\Debug\net6.0\Ecommerce.ProductAPI.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.ProductAPI\obj\Debug\net6.0\Ecommerce.ProductAPI.AssemblyInfoInputs.cache
-C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.ProductAPI\obj\Debug\net6.0\Ecommerce.ProductAPI.AssemblyInfo.cs
-C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.ProductAPI\obj\Debug\net6.0\Ecommerce.ProductAPI.csproj.CoreCompileInputs.cache
-C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.ProductAPI\obj\Debug\net6.0\Ecommerce.ProductAPI.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.ProductAPI\obj\Debug\net6.0\Ecommerce.ProductAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.ProductAPI\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.ProductAPI\obj\Debug\net6.0\staticwebassets.development.json
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.ProductAPI\obj\Debug\net6.0\scopedcss\bundle\Ecommerce.ProductAPI.styles.css

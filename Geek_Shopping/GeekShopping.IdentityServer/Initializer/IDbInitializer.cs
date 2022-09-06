@@ -1,4 +1,4 @@
-﻿namespace GeekShopping.IdentityServer.Initializer
+﻿namespace Ecommerce.IdentityServer.Initializer
 {
     public interface IDbInitializer
     {

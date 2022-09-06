@@ -1,9 +1,9 @@
 using Duende.IdentityServer.Services;
-using GeekShopping.IdentityServer.Configuration;
-using GeekShopping.IdentityServer.Initializer;
-using GeekShopping.IdentityServer.Model;
-using GeekShopping.IdentityServer.Model.Context;
-using GeekShopping.IdentityServer.Services;
+using Ecommerce.IdentityServer.Configuration;
+using Ecommerce.IdentityServer.Initializer;
+using Ecommerce.IdentityServer.Model;
+using Ecommerce.IdentityServer.Model.Context;
+using Ecommerce.IdentityServer.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
