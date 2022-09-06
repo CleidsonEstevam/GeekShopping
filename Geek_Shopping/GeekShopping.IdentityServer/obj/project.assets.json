@@ -1680,9 +1680,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cleidson.silva\\Desktop\\GeekShopping\\Geek_Shopping\\GeekShopping.IdentityServer\\GeekShopping.IdentityServer.csproj",
-      "projectName": "GeekShopping.IdentityServer",
-      "projectPath": "C:\\Users\\cleidson.silva\\Desktop\\GeekShopping\\Geek_Shopping\\GeekShopping.IdentityServer\\GeekShopping.IdentityServer.csproj",
+      "projectUniqueName": "C:\\Users\\cleidson.silva\\Desktop\\GeekShopping\\Geek_Shopping\\GeekShopping.IdentityServer\\Ecommerce.IdentityServer.csproj",
+      "projectName": "Ecommerce.IdentityServer",
+      "projectPath": "C:\\Users\\cleidson.silva\\Desktop\\GeekShopping\\Geek_Shopping\\GeekShopping.IdentityServer\\Ecommerce.IdentityServer.csproj",
       "packagesPath": "C:\\Users\\cleidson.silva\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\cleidson.silva\\Desktop\\GeekShopping\\Geek_Shopping\\GeekShopping.IdentityServer\\obj\\",
       "projectStyle": "PackageReference",

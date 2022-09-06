@@ -1643,9 +1643,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cleidson.silva\\Desktop\\GeekShopping\\Geek_Shopping\\GeekShopping.ProductAPI\\GeekShopping.ProductAPI.csproj",
-      "projectName": "GeekShopping.ProductAPI",
-      "projectPath": "C:\\Users\\cleidson.silva\\Desktop\\GeekShopping\\Geek_Shopping\\GeekShopping.ProductAPI\\GeekShopping.ProductAPI.csproj",
+      "projectUniqueName": "C:\\Users\\cleidson.silva\\Desktop\\GeekShopping\\Geek_Shopping\\GeekShopping.ProductAPI\\Ecommerce.ProductAPI.csproj",
+      "projectName": "Ecommerce.ProductAPI",
+      "projectPath": "C:\\Users\\cleidson.silva\\Desktop\\GeekShopping\\Geek_Shopping\\GeekShopping.ProductAPI\\Ecommerce.ProductAPI.csproj",
       "packagesPath": "C:\\Users\\cleidson.silva\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\cleidson.silva\\Desktop\\GeekShopping\\Geek_Shopping\\GeekShopping.ProductAPI\\obj\\",
       "projectStyle": "PackageReference",
