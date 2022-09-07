@@ -3,8 +3,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ecommerce.CartAPI.Data.DTO
 {
-    public class CartDetailDTO : BaseEntity
+    public class CartDetailDTO
     {
+        public long Id { get; set; }
         public long CartHeadrId { get; set; }
         public CartHeaderDTO? CartHeader { get; set; }
         public long ProductId { get; set; }

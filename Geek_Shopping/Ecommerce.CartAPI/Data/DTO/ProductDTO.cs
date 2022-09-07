@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ecommerce.CartAPI.Data.DTO
 {
-    public class ProductDTO : BaseEntity
+    public class ProductDTO 
     {
         public long Id { get; set; }
         public string? Name { get; set; }
