@@ -10,8 +10,8 @@ namespace Ecommerce.CartAPI.Model
         public long CartHeadrId { get; set; }
 
         [ForeignKey("CartHeadrId")]
-        public CartHeader? CartHeader { get; set; } 
-        
+        public CartHeader? CartHeader { get; set; }
+
         [Column("product_id")]
         public long ProductId { get; set; }
 

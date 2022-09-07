@@ -3195,19 +3195,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\cleidson.silva\\.nuget\\packages\\": {}
+    "C:\\Users\\cleid\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cleidson.silva\\Desktop\\GeekShopping\\Geek_Shopping\\GeekShopping.Web\\GeekShopping.Web.csproj",
+      "projectUniqueName": "C:\\Users\\cleid\\OneDrive\\Área de Trabalho\\GeekShopping\\Geek_Shopping\\GeekShopping.Web\\GeekShopping.Web.csproj",
       "projectName": "GeekShopping.Web",
-      "projectPath": "C:\\Users\\cleidson.silva\\Desktop\\GeekShopping\\Geek_Shopping\\GeekShopping.Web\\GeekShopping.Web.csproj",
-      "packagesPath": "C:\\Users\\cleidson.silva\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cleidson.silva\\Desktop\\GeekShopping\\Geek_Shopping\\GeekShopping.Web\\obj\\",
+      "projectPath": "C:\\Users\\cleid\\OneDrive\\Área de Trabalho\\GeekShopping\\Geek_Shopping\\GeekShopping.Web\\GeekShopping.Web.csproj",
+      "packagesPath": "C:\\Users\\cleid\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\cleid\\OneDrive\\Área de Trabalho\\GeekShopping\\Geek_Shopping\\GeekShopping.Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\cleidson.silva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\cleid\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3221,8 +3221,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\cleidson.silva\\Desktop\\GeekShopping\\Geek_Shopping\\Ecommerce.CartAPI\\Ecommerce.CartAPI.csproj": {
-              "projectPath": "C:\\Users\\cleidson.silva\\Desktop\\GeekShopping\\Geek_Shopping\\Ecommerce.CartAPI\\Ecommerce.CartAPI.csproj"
+            "C:\\Users\\cleid\\OneDrive\\Área de Trabalho\\GeekShopping\\Geek_Shopping\\Ecommerce.CartAPI\\Ecommerce.CartAPI.csproj": {
+              "projectPath": "C:\\Users\\cleid\\OneDrive\\Área de Trabalho\\GeekShopping\\Geek_Shopping\\Ecommerce.CartAPI\\Ecommerce.CartAPI.csproj"
             }
           }
         }
@@ -3272,7 +3272,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   },
