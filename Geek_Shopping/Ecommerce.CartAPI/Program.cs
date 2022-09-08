@@ -3,8 +3,6 @@ using Ecommerce.CartAPI.Config;
 using Ecommerce.CartAPI.Model.Context;
 using Microsoft.EntityFrameworkCore;
 
-#pragma warning restore CS8603 // Possible null reference return.
-
 var builder = WebApplication.CreateBuilder(args);
 
 
@@ -32,12 +30,14 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
+
     app.UseSwaggerUI();
 }
 
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
 app.UseAuthentication();
 
 app.MapControllers();

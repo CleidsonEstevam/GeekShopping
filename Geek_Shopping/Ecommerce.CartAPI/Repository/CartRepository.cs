@@ -29,7 +29,15 @@ namespace Ecommerce.CartAPI.Repository
 
         public async Task<CartDTO> FindCartUserById(string userId)
         {
-            throw new NotImplementedException();
+            Cart cart = new Cart()
+            {
+                CartHeader = await _context.CartHaders.FirstOrDefaultAsync(c => c.UserId == userId),
+
+            }; 
+            cart.CartDetails = _context.CartDetails.Where(c => c.CartHeaderId == cart.CartHeader.Id)
+                                                   .Include(c => c.Product);
+           
+            return _mapper.Map<CartDTO>(cart);
         }
 
         public async Task<bool> RemoveCoupon(string UserId)
@@ -39,8 +47,27 @@ namespace Ecommerce.CartAPI.Repository
 
         public async Task<bool> RemoveFromCart(long cartDatailsId)
         {
-            throw new NotImplementedException();
-        }
+            try
+            {
+                CartDetail cartDetail = await _context.CartDetails.FirstOrDefaultAsync(c => c.Id == cartDatailsId);
+                int total = _context.CartDetails.Where(c => c.CartHeaderId == cartDetail.CartHeaderId).Count();
+
+                _context.CartDetails.Remove(cartDetail);
+                if (total == 1) 
+                {
+                    var cartHeaderToemove = await _context.CartHaders.FirstOrDefaultAsync(c => c.Id == cartDetail.CartHeaderId);
+                    _context.CartHaders.Remove(cartHeaderToemove);
+
+                }
+                await _context.SaveChangesAsync();  
+
+                return true;
+            }
+            catch (Exception)
+            {
+
+                return false;
+            }        }
 
         public async Task<CartDTO> SaveOrUpdateCart(CartDTO cartDTO)
         {  
@@ -53,7 +80,7 @@ namespace Ecommerce.CartAPI.Repository
                 _context.Products.Add(cart.CartDetails.FirstOrDefault().Product);
             await _context.SaveChangesAsync();
 
-            //criando cabeçalho e items do carrinhp
+            //criando cabeçalho e items do carrinho
             var cartHeader = await _context.CartHaders.AsNoTracking().FirstOrDefaultAsync(c => c.UserId == cart.CartHeader.UserId);
             if (cartHeader == null) 
             {
@@ -61,6 +88,7 @@ namespace Ecommerce.CartAPI.Repository
                 await _context.SaveChangesAsync();
 
                 cart.CartDetails.FirstOrDefault().CartHeaderId = cart.CartHeader.Id;
+                //Adicionadno null, pois, Product já foi adicionado no contexto
                 cart.CartDetails.FirstOrDefault().Product = null;
 
                 _context.CartDetails.Add(cart.CartDetails.FirstOrDefault());
@@ -89,7 +117,6 @@ namespace Ecommerce.CartAPI.Repository
                     await _context.SaveChangesAsync();
                 }
             }
-
             return _mapper.Map<CartDTO>(cart);
         }
     }
