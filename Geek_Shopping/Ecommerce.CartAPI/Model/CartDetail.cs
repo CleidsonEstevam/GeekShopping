@@ -7,7 +7,7 @@ namespace Ecommerce.CartAPI.Model
     public class CartDetail : BaseEntity
     {
         [Column("cart_header_id")]
-        public long CartHeadrId { get; set; }
+        public long CartHeaderId { get; set; }
 
         [ForeignKey("CartHeadrId")]
         public CartHeader? CartHeader { get; set; }

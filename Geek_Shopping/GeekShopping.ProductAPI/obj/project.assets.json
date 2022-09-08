@@ -1638,19 +1638,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\cleid\\.nuget\\packages\\": {}
+    "C:\\Users\\cleidson.silva\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cleid\\OneDrive\\Área de Trabalho\\GeekShopping\\Geek_Shopping\\GeekShopping.ProductAPI\\Ecommerce.ProductAPI.csproj",
+      "projectUniqueName": "C:\\Users\\cleidson.silva\\Desktop\\GeekShopping\\Geek_Shopping\\GeekShopping.ProductAPI\\Ecommerce.ProductAPI.csproj",
       "projectName": "Ecommerce.ProductAPI",
-      "projectPath": "C:\\Users\\cleid\\OneDrive\\Área de Trabalho\\GeekShopping\\Geek_Shopping\\GeekShopping.ProductAPI\\Ecommerce.ProductAPI.csproj",
-      "packagesPath": "C:\\Users\\cleid\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cleid\\OneDrive\\Área de Trabalho\\GeekShopping\\Geek_Shopping\\GeekShopping.ProductAPI\\obj\\",
+      "projectPath": "C:\\Users\\cleidson.silva\\Desktop\\GeekShopping\\Geek_Shopping\\GeekShopping.ProductAPI\\Ecommerce.ProductAPI.csproj",
+      "packagesPath": "C:\\Users\\cleidson.silva\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\cleidson.silva\\Desktop\\GeekShopping\\Geek_Shopping\\GeekShopping.ProductAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\cleid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\cleidson.silva\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1733,7 +1733,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   },

@@ -3,6 +3,8 @@ using Ecommerce.CartAPI.Config;
 using Ecommerce.CartAPI.Model.Context;
 using Microsoft.EntityFrameworkCore;
 
+#pragma warning restore CS8603 // Possible null reference return.
+
 var builder = WebApplication.CreateBuilder(args);
 
 
