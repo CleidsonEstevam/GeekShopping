@@ -21,10 +21,24 @@ namespace Ecommerce.CartAPI.Repository
         {
             throw new NotImplementedException();
         }
+        public async Task<bool> RemoveCoupon(string UserId)
+        {
+            throw new NotImplementedException();
+        }
 
         public async Task<bool> ClearCart(string UserId)
         {
-            throw new NotImplementedException();
+            var cartHeader = await _context.CartHaders.FirstOrDefaultAsync(c => c.UserId == UserId);
+            if (cartHeader != null)
+            {
+                _context.CartDetails.RemoveRange(_context.CartDetails.Where(c => c.CartHeaderId == cartHeader.Id));
+                _context.CartHaders.Remove(cartHeader);
+                await _context.SaveChangesAsync();
+                
+                return true;
+            }
+
+            return false;
         }
 
         public async Task<CartDTO> FindCartUserById(string userId)
@@ -32,17 +46,11 @@ namespace Ecommerce.CartAPI.Repository
             Cart cart = new Cart()
             {
                 CartHeader = await _context.CartHaders.FirstOrDefaultAsync(c => c.UserId == userId),
-
             }; 
             cart.CartDetails = _context.CartDetails.Where(c => c.CartHeaderId == cart.CartHeader.Id)
                                                    .Include(c => c.Product);
            
             return _mapper.Map<CartDTO>(cart);
-        }
-
-        public async Task<bool> RemoveCoupon(string UserId)
-        {
-            throw new NotImplementedException();
         }
 
         public async Task<bool> RemoveFromCart(long cartDatailsId)
@@ -67,7 +75,8 @@ namespace Ecommerce.CartAPI.Repository
             {
 
                 return false;
-            }        }
+            }     
+        }
 
         public async Task<CartDTO> SaveOrUpdateCart(CartDTO cartDTO)
         {  
