@@ -1,6 +1,7 @@
 using AutoMapper;
 using Ecommerce.CartAPI.Config;
 using Ecommerce.CartAPI.Model.Context;
+using Ecommerce.CartAPI.Repository;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -16,6 +17,11 @@ IMapper mapper = MappingConfig.RegisterMaps().CreateMapper();
 builder.Services.AddSingleton(mapper);
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 #endregion
+
+#region "Dependecy Injection"
+builder.Services.AddScoped<ICartRepository, CartRepository>();
+#endregion
+
 
 // Add services to the container.
 
