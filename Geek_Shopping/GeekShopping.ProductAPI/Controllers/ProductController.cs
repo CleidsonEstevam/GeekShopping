@@ -30,20 +30,20 @@ namespace Ecommerce.ProductAPI.Controllers
             if (product == null) return NotFound();
             return Ok(product);
         }
+
         [HttpPost]
         [Authorize]
         [Authorize(Roles = Role.Admin)]
-
         public async Task<ActionResult<ProductDTO>> Create(ProductDTO prodDTO)
         {
             if (prodDTO == null) return BadRequest();
             var product = await _repository.Create(prodDTO);
             return Ok(product);
         }
+
         [HttpPut]
         [Authorize]
         [Authorize(Roles = Role.Admin)]
-
         public async Task<ActionResult<ProductDTO>> Update(ProductDTO prodDTO)
         {
             if (prodDTO == null) return BadRequest();

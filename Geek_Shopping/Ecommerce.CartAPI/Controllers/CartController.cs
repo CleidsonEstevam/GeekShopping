@@ -15,32 +15,36 @@ namespace Ecommerce.CartAPI.Controllers
             _repository = repository ?? throw new ArgumentNullException(nameof(repository)); ;
         }
 
-        public IActionResult Index()
+        [HttpGet("find-cart/{id}")]
+        public async Task<ActionResult<CartDTO>> FindById(string id)
         {
-            return View();
+            var cart = await _repository.FindCartUserById(id);
+            if (cart == null) return NotFound();
+            return Ok(cart);
         }
-
-        public async Task<CartDTO> SaveOrUpdateCart(CartDTO cartDTO)
+        
+        [HttpPost("add-cart/{id}")]
+        public async Task<ActionResult<CartDTO>> AddCart(CartDTO cartDTO)
         {
-            
-        }
-
-        [HttpGet("{userId}")]
-        public async Task<ActionResult<CartDTO>> FindById(string userId)
-        {
-            var cart = await _repository.FindCartUserById(userId);
+            var cart = await _repository.SaveOrUpdateCart(cartDTO);
             if (cart == null) return NotFound();
             return Ok(cart);
         }
 
-        public async Task<bool> ClearCart(string UserId)
+        [HttpPut("update-cart/{id}")]
+        public async Task<ActionResult<CartDTO>> UpdateCart(CartDTO cartDTO)
         {
-            
+            var cart = await _repository.SaveOrUpdateCart(cartDTO);
+            if (cart == null) return NotFound();
+            return Ok(cart);
         }
 
-        public async Task<bool> RemoveFromCart(long cartDatailsId)
+        [HttpPost("remove-cart/{id}")]
+        public async Task<ActionResult<CartDTO>> RemoveCart(int id)
         {
-
+            var status = await _repository.RemoveFromCart(id);
+            if (!status) return NotFound();
+            return Ok(status);
         }
     }
 }
