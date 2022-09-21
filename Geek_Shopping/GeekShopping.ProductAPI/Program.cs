@@ -1,103 +1,26 @@
-using AutoMapper;
-using Ecommerce.ProductAPI.Config;
-using Ecommerce.ProductAPI.Model.Context;
-using Ecommerce.ProductAPI.Repository;
-using Ecommerce.ProductAPI.Repository.Interface;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.IdentityModel.Tokens;
-using Microsoft.OpenApi.Models;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
-var builder = WebApplication.CreateBuilder(args);
-
-#region "Config StringConnection"
-var connection = builder.Configuration["MySqlConnection:MysqlConnectionString"];
-builder.Services.AddDbContext<MySqlContext>(options => options.UseMySql(connection, new MySqlServerVersion(new Version(8, 0, 25))));
-#endregion
-
-#region "COnfig AutoMapper"
-IMapper mapper = MappingConfig.RegisterMaps().CreateMapper();
-builder.Services.AddSingleton(mapper);
-builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-#endregion
-
-#region "Dependecy Injection"
-builder.Services.AddScoped<IProductRepository, ProductRepository>();
-#endregion
-
-#region "Confi. de autenticação/autorização"
-
-builder.Services.AddAuthentication("Bearer")
-               .AddJwtBearer("Bearer", options =>
-               {
-                   options.Authority = "https://localhost:4435/";
-                   options.TokenValidationParameters = new TokenValidationParameters
-                   {
-                       ValidateAudience = false
-                   };
-               });
-
-builder.Services.AddAuthorization(options =>
+namespace GeekShopping.ProductAPI
 {
-    options.AddPolicy("ApiScope", policy =>
+    public class Program
     {
-        policy.RequireAuthenticatedUser();
-        policy.RequireClaim("scope", "geek_shopping");
-    });
-});
+        public static void Main(string[] args)
+        {
+            CreateHostBuilder(args).Build().Run();
+        }
 
-#endregion
-
-#region "Config. Swagger"
-builder.Services.AddSwaggerGen(c =>
-{
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Ecommerce.ProductAPI", Version = "v1" });
-    c.EnableAnnotations();
-    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
-    {
-        Description = @"Enter 'Bearer' [space] and your token!",
-        Name = "Authorization",
-        In = ParameterLocation.Header,
-        Type = SecuritySchemeType.ApiKey,
-        Scheme = "Bearer"
-    });
-
-    c.AddSecurityRequirement(new OpenApiSecurityRequirement {
-                    {
-                        new OpenApiSecurityScheme
-                        {
-                            Reference = new OpenApiReference
-                            {
-                                Type = ReferenceType.SecurityScheme,
-                                Id = "Bearer"
-                            },
-                            Scheme = "oauth2",
-                            Name = "Bearer",
-                            In= ParameterLocation.Header
-                        },
-                        new List<string> ()
-                    }
+        public static IHostBuilder CreateHostBuilder(string[] args) =>
+            Host.CreateDefaultBuilder(args)
+                .ConfigureWebHostDefaults(webBuilder =>
+                {
+                    webBuilder.UseStartup<Startup>();
                 });
-});
-#endregion
-
-// Add services to the container.
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-builder.Services.AddControllersWithViews();
-
-var app = builder.Build();
-
-
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    }
 }
-
-app.UseHttpsRedirection();
-app.UseAuthentication();
-app.UseAuthorization();
-
-app.Run();

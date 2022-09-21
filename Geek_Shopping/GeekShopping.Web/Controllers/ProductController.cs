@@ -4,6 +4,10 @@ using GeekShopping.Web.Utils;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace GeekShopping.Web.Controllers
 {
@@ -21,6 +25,7 @@ namespace GeekShopping.Web.Controllers
             var products = await _productService.FindAllProducts("");
             return View(products);
         }
+
         public async Task<IActionResult> ProductCreate()
         {
             return View();
@@ -28,7 +33,6 @@ namespace GeekShopping.Web.Controllers
 
         [Authorize]
         [HttpPost]
-        [Authorize(Roles = Role.Admin)]
         public async Task<IActionResult> ProductCreate(ProductModel model)
         {
             if (ModelState.IsValid)
@@ -82,6 +86,5 @@ namespace GeekShopping.Web.Controllers
                     nameof(ProductIndex));
             return View(model);
         }
-
     }
 }

@@ -1,7 +1,11 @@
 ﻿using GeekShopping.Web.Models;
 using GeekShopping.Web.Services.IServices;
 using GeekShopping.Web.Utils;
+using System;
+using System.Collections.Generic;
+using System.Net.Http;
 using System.Net.Http.Headers;
+using System.Threading.Tasks;
 
 namespace GeekShopping.Web.Services
 {
@@ -54,7 +58,5 @@ namespace GeekShopping.Web.Services
                 return await response.ReadContentAs<bool>();
             else throw new Exception("Something went wrong when calling API");
         }
-
-
     }
 }

@@ -1,30 +1,38 @@
-﻿using Ecommerce.ProductAPI.Data.DTO;
-using Ecommerce.ProductAPI.Repository.Interface;
-using Ecommerce.ProductAPI.Utils;
+﻿using GeekShopping.ProductAPI.Data.ValueObjects;
+using GeekShopping.ProductAPI.Repository;
+using GeekShopping.ProductAPI.Utils;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace Ecommerce.ProductAPI.Controllers
+namespace GeekShopping.ProductAPI.Controllers
 {
     [Route("api/v1/[controller]")]
     [ApiController]
     public class ProductController : ControllerBase
     {
-        private readonly IProductRepository _repository;
+        private IProductRepository _repository;
+
         public ProductController(IProductRepository repository)
         {
-            _repository = repository ?? throw new ArgumentNullException(nameof(repository));
+            _repository = repository ?? throw new
+                ArgumentNullException(nameof(repository));
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<ProductDTO>>> FindAll()
+        public async Task<ActionResult<IEnumerable<ProductVO>>> FindAll()
         {
             var products = await _repository.FindAll();
             return Ok(products);
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<ProductDTO>> FindById(long id)
+        [Authorize]
+        public async Task<ActionResult<ProductVO>> FindById(long id)
         {
             var product = await _repository.FindById(id);
             if (product == null) return NotFound();
@@ -33,26 +41,24 @@ namespace Ecommerce.ProductAPI.Controllers
 
         [HttpPost]
         [Authorize]
-        [Authorize(Roles = Role.Admin)]
-        public async Task<ActionResult<ProductDTO>> Create(ProductDTO prodDTO)
+        public async Task<ActionResult<ProductVO>> Create([FromBody] ProductVO vo)
         {
-            if (prodDTO == null) return BadRequest();
-            var product = await _repository.Create(prodDTO);
+            if (vo == null) return BadRequest();
+            var product = await _repository.Create(vo);
             return Ok(product);
         }
 
         [HttpPut]
         [Authorize]
-        [Authorize(Roles = Role.Admin)]
-        public async Task<ActionResult<ProductDTO>> Update(ProductDTO prodDTO)
+        public async Task<ActionResult<ProductVO>> Update([FromBody] ProductVO vo)
         {
-            if (prodDTO == null) return BadRequest();
-            var product = await _repository.Update(prodDTO);
+            if (vo == null) return BadRequest();
+            var product = await _repository.Update(vo);
             return Ok(product);
         }
 
         [HttpDelete("{id}")]
-        [Authorize(Roles = Role.Admin)] 
+        [Authorize(Roles = Role.Admin)]
         public async Task<ActionResult> Delete(long id)
         {
             var status = await _repository.Delete(id);

@@ -2,7 +2,7 @@
 using Duende.IdentityServer.Models;
 using System.Collections.Generic;
 
-namespace Ecommerce.IdentityServer.Configuration
+namespace GeekShopping.IdentityServer.Configuration
 {
     public static class IdentityConfiguration
     {
@@ -31,14 +31,14 @@ namespace Ecommerce.IdentityServer.Configuration
                 new Client
                 {
                     ClientId = "client",
-                    ClientSecrets = { new Secret("my_secret".Sha256())},
+                    ClientSecrets = { new Secret("my_super_secret".Sha256())},
                     AllowedGrantTypes = GrantTypes.ClientCredentials,
                     AllowedScopes = {"read", "write", "profile" }
                 },
                 new Client
                 {
                     ClientId = "geek_shopping",
-                    ClientSecrets = { new Secret("my_secret".Sha256())},
+                    ClientSecrets = { new Secret("my_super_secret".Sha256())},
                     AllowedGrantTypes = GrantTypes.Code,
                     RedirectUris = {"https://localhost:4430/signin-oidc"},
                     PostLogoutRedirectUris = {"https://localhost:4430/signout-callback-oidc"},

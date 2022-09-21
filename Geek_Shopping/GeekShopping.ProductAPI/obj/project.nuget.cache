@@ -1,138 +1,51 @@
 {
   "version": 2,
-  "dgSpecHash": "87pDSqMCDdnAZR3AA7UBjJi4m3FxIBX+vA23YzWu5FEPn18A6xVZLGoskmT2mJyLhGObKC8BzfNxtxzjogdjEw==",
+  "dgSpecHash": "YhlD6X+iCHOCAUhq3hSb9JWsSdc32hZnm/ShHMUrIfmxUPP/5uZ5eGIizxhvrpEaOrfgy+0Y7FBIYnhcJ0EQxA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\cleidson.silva\\Desktop\\GeekShopping\\Geek_Shopping\\GeekShopping.ProductAPI\\Ecommerce.ProductAPI.csproj",
+  "projectFilePath": "C:\\Users\\cleidson.silva\\Desktop\\S13_ErudioMicroservices.NET6-DevelopingShoppingCartMicrosservice\\GeekShooping\\GeekShopping.ProductAPI\\GeekShopping.ProductAPI.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\cleidson.silva\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
-    "C:\\Users\\cleidson.silva\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
+    "C:\\Users\\cleidson.silva\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\cleidson.silva\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
     "C:\\Users\\cleidson.silva\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
-    "C:\\Users\\cleidson.silva\\.nuget\\packages\\microsoft.aspnet.webapi.client\\4.0.20710\\microsoft.aspnet.webapi.client.4.0.20710.nupkg.sha512",
-    "C:\\Users\\cleidson.silva\\.nuget\\packages\\microsoft.aspnet.webapi.core\\4.0.20710\\microsoft.aspnet.webapi.core.4.0.20710.nupkg.sha512",
-    "C:\\Users\\cleidson.silva\\.nuget\\packages\\microsoft.aspnet.webapi.webhost\\4.0.20710\\microsoft.aspnet.webapi.webhost.4.0.20710.nupkg.sha512",
-    "C:\\Users\\cleidson.silva\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.6\\microsoft.aspnetcore.authentication.jwtbearer.6.0.6.nupkg.sha512",
+    "C:\\Users\\cleidson.silva\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.0-preview.6.21355.2\\microsoft.aspnetcore.authentication.jwtbearer.6.0.0-preview.6.21355.2.nupkg.sha512",
     "C:\\Users\\cleidson.silva\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
-    "C:\\Users\\cleidson.silva\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.6\\microsoft.entityframeworkcore.6.0.6.nupkg.sha512",
-    "C:\\Users\\cleidson.silva\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.6\\microsoft.entityframeworkcore.abstractions.6.0.6.nupkg.sha512",
-    "C:\\Users\\cleidson.silva\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.6\\microsoft.entityframeworkcore.analyzers.6.0.6.nupkg.sha512",
-    "C:\\Users\\cleidson.silva\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.6\\microsoft.entityframeworkcore.design.6.0.6.nupkg.sha512",
-    "C:\\Users\\cleidson.silva\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.6\\microsoft.entityframeworkcore.relational.6.0.6.nupkg.sha512",
-    "C:\\Users\\cleidson.silva\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\6.0.6\\microsoft.entityframeworkcore.tools.6.0.6.nupkg.sha512",
+    "C:\\Users\\cleidson.silva\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.0-preview.6.21352.1\\microsoft.entityframeworkcore.6.0.0-preview.6.21352.1.nupkg.sha512",
+    "C:\\Users\\cleidson.silva\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.0-preview.6.21352.1\\microsoft.entityframeworkcore.abstractions.6.0.0-preview.6.21352.1.nupkg.sha512",
+    "C:\\Users\\cleidson.silva\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.0-preview.6.21352.1\\microsoft.entityframeworkcore.analyzers.6.0.0-preview.6.21352.1.nupkg.sha512",
+    "C:\\Users\\cleidson.silva\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.0-preview.6.21352.1\\microsoft.entityframeworkcore.design.6.0.0-preview.6.21352.1.nupkg.sha512",
+    "C:\\Users\\cleidson.silva\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.0-preview.6.21352.1\\microsoft.entityframeworkcore.relational.6.0.0-preview.6.21352.1.nupkg.sha512",
+    "C:\\Users\\cleidson.silva\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\6.0.0-preview.6.21352.1\\microsoft.entityframeworkcore.tools.6.0.0-preview.6.21352.1.nupkg.sha512",
     "C:\\Users\\cleidson.silva\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
-    "C:\\Users\\cleidson.silva\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
-    "C:\\Users\\cleidson.silva\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.1\\microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",
-    "C:\\Users\\cleidson.silva\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
-    "C:\\Users\\cleidson.silva\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.0\\microsoft.extensions.dependencyinjection.6.0.0.nupkg.sha512",
-    "C:\\Users\\cleidson.silva\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
-    "C:\\Users\\cleidson.silva\\.nuget\\packages\\microsoft.extensions.logging\\6.0.0\\microsoft.extensions.logging.6.0.0.nupkg.sha512",
-    "C:\\Users\\cleidson.silva\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
-    "C:\\Users\\cleidson.silva\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
-    "C:\\Users\\cleidson.silva\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\cleidson.silva\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0-preview.6.21352.12\\microsoft.extensions.caching.abstractions.6.0.0-preview.6.21352.12.nupkg.sha512",
+    "C:\\Users\\cleidson.silva\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.0-preview.6.21352.12\\microsoft.extensions.caching.memory.6.0.0-preview.6.21352.12.nupkg.sha512",
+    "C:\\Users\\cleidson.silva\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0-preview.6.21352.12\\microsoft.extensions.configuration.abstractions.6.0.0-preview.6.21352.12.nupkg.sha512",
+    "C:\\Users\\cleidson.silva\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.0-preview.6.21352.12\\microsoft.extensions.dependencyinjection.6.0.0-preview.6.21352.12.nupkg.sha512",
+    "C:\\Users\\cleidson.silva\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0-preview.6.21352.12\\microsoft.extensions.dependencyinjection.abstractions.6.0.0-preview.6.21352.12.nupkg.sha512",
+    "C:\\Users\\cleidson.silva\\.nuget\\packages\\microsoft.extensions.logging\\6.0.0-preview.6.21352.12\\microsoft.extensions.logging.6.0.0-preview.6.21352.12.nupkg.sha512",
+    "C:\\Users\\cleidson.silva\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0-preview.6.21352.12\\microsoft.extensions.logging.abstractions.6.0.0-preview.6.21352.12.nupkg.sha512",
+    "C:\\Users\\cleidson.silva\\.nuget\\packages\\microsoft.extensions.options\\6.0.0-preview.6.21352.12\\microsoft.extensions.options.6.0.0-preview.6.21352.12.nupkg.sha512",
+    "C:\\Users\\cleidson.silva\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0-preview.6.21352.12\\microsoft.extensions.primitives.6.0.0-preview.6.21352.12.nupkg.sha512",
     "C:\\Users\\cleidson.silva\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.10.0\\microsoft.identitymodel.jsonwebtokens.6.10.0.nupkg.sha512",
     "C:\\Users\\cleidson.silva\\.nuget\\packages\\microsoft.identitymodel.logging\\6.10.0\\microsoft.identitymodel.logging.6.10.0.nupkg.sha512",
     "C:\\Users\\cleidson.silva\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.10.0\\microsoft.identitymodel.protocols.6.10.0.nupkg.sha512",
     "C:\\Users\\cleidson.silva\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.10.0\\microsoft.identitymodel.protocols.openidconnect.6.10.0.nupkg.sha512",
     "C:\\Users\\cleidson.silva\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.10.0\\microsoft.identitymodel.tokens.6.10.0.nupkg.sha512",
-    "C:\\Users\\cleidson.silva\\.nuget\\packages\\microsoft.net.http\\2.0.20710\\microsoft.net.http.2.0.20710.nupkg.sha512",
     "C:\\Users\\cleidson.silva\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
-    "C:\\Users\\cleidson.silva\\.nuget\\packages\\microsoft.web.infrastructure\\1.0.0\\microsoft.web.infrastructure.1.0.0.nupkg.sha512",
-    "C:\\Users\\cleidson.silva\\.nuget\\packages\\mysqlconnector\\2.1.2\\mysqlconnector.2.1.2.nupkg.sha512",
-    "C:\\Users\\cleidson.silva\\.nuget\\packages\\newtonsoft.json\\7.0.1\\newtonsoft.json.7.0.1.nupkg.sha512",
-    "C:\\Users\\cleidson.silva\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\6.0.1\\pomelo.entityframeworkcore.mysql.6.0.1.nupkg.sha512",
-    "C:\\Users\\cleidson.silva\\.nuget\\packages\\swashbuckle\\5.6.0\\swashbuckle.5.6.0.nupkg.sha512",
-    "C:\\Users\\cleidson.silva\\.nuget\\packages\\swashbuckle.aspnetcore\\6.3.1\\swashbuckle.aspnetcore.6.3.1.nupkg.sha512",
-    "C:\\Users\\cleidson.silva\\.nuget\\packages\\swashbuckle.aspnetcore.annotations\\6.3.1\\swashbuckle.aspnetcore.annotations.6.3.1.nupkg.sha512",
-    "C:\\Users\\cleidson.silva\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.3.1\\swashbuckle.aspnetcore.swagger.6.3.1.nupkg.sha512",
-    "C:\\Users\\cleidson.silva\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.3.1\\swashbuckle.aspnetcore.swaggergen.6.3.1.nupkg.sha512",
-    "C:\\Users\\cleidson.silva\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.3.1\\swashbuckle.aspnetcore.swaggerui.6.3.1.nupkg.sha512",
-    "C:\\Users\\cleidson.silva\\.nuget\\packages\\swashbuckle.core\\5.6.0\\swashbuckle.core.5.6.0.nupkg.sha512",
-    "C:\\Users\\cleidson.silva\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
-    "C:\\Users\\cleidson.silva\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
+    "C:\\Users\\cleidson.silva\\.nuget\\packages\\mysqlconnector\\1.3.10\\mysqlconnector.1.3.10.nupkg.sha512",
+    "C:\\Users\\cleidson.silva\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\6.0.0-preview.5\\pomelo.entityframeworkcore.mysql.6.0.0-preview.5.nupkg.sha512",
+    "C:\\Users\\cleidson.silva\\.nuget\\packages\\swashbuckle.aspnetcore\\6.1.5\\swashbuckle.aspnetcore.6.1.5.nupkg.sha512",
+    "C:\\Users\\cleidson.silva\\.nuget\\packages\\swashbuckle.aspnetcore.annotations\\6.1.5\\swashbuckle.aspnetcore.annotations.6.1.5.nupkg.sha512",
+    "C:\\Users\\cleidson.silva\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.1.5\\swashbuckle.aspnetcore.swagger.6.1.5.nupkg.sha512",
+    "C:\\Users\\cleidson.silva\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.1.5\\swashbuckle.aspnetcore.swaggergen.6.1.5.nupkg.sha512",
+    "C:\\Users\\cleidson.silva\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.1.5\\swashbuckle.aspnetcore.swaggerui.6.1.5.nupkg.sha512",
+    "C:\\Users\\cleidson.silva\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\cleidson.silva\\.nuget\\packages\\system.collections.immutable\\6.0.0-preview.6.21352.12\\system.collections.immutable.6.0.0-preview.6.21352.12.nupkg.sha512",
+    "C:\\Users\\cleidson.silva\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0-preview.6.21352.12\\system.diagnostics.diagnosticsource.6.0.0-preview.6.21352.12.nupkg.sha512",
     "C:\\Users\\cleidson.silva\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.10.0\\system.identitymodel.tokens.jwt.6.10.0.nupkg.sha512",
-    "C:\\Users\\cleidson.silva\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
-    "C:\\Users\\cleidson.silva\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512",
-    "C:\\Users\\cleidson.silva\\.nuget\\packages\\webactivatorex\\2.0.0\\webactivatorex.2.0.0.nupkg.sha512"
+    "C:\\Users\\cleidson.silva\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\cleidson.silva\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
+    "C:\\Users\\cleidson.silva\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0-preview.6.21352.12\\system.runtime.compilerservices.unsafe.6.0.0-preview.6.21352.12.nupkg.sha512",
+    "C:\\Users\\cleidson.silva\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.WebApi.Client 4.0.20710' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Microsoft.AspNet.WebApi.Client",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.WebApi.Core 4.0.20710' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Microsoft.AspNet.WebApi.Core",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.WebApi.WebHost 4.0.20710' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Microsoft.AspNet.WebApi.WebHost",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.Net.Http 2.0.20710' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Microsoft.Net.Http",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.Web.Infrastructure 1.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Microsoft.Web.Infrastructure",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Newtonsoft.Json 7.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Newtonsoft.Json",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Swashbuckle.Core 5.6.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Swashbuckle.Core",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'WebActivatorEx 2.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
-      "libraryId": "WebActivatorEx",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    }
-  ]
+  "logs": []
 }

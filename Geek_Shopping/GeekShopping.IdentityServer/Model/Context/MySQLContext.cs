@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace Ecommerce.IdentityServer.Model.Context
+namespace GeekShopping.IdentityServer.Model.Context
 {
     public class MySQLContext : IdentityDbContext<ApplicationUser>
     {

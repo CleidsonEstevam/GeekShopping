@@ -1,68 +1,26 @@
-using Duende.IdentityServer.Services;
-using Ecommerce.IdentityServer.Configuration;
-using Ecommerce.IdentityServer.Initializer;
-using Ecommerce.IdentityServer.Model;
-using Ecommerce.IdentityServer.Model.Context;
-using Ecommerce.IdentityServer.Services;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
-var builder = WebApplication.CreateBuilder(args);
-
-#region "Config StringConnection"
-var connection = builder.Configuration["MySqlConnection:MysqlConnectionString"];
-builder.Services.AddDbContext<MySQLContext>(options => options.UseMySql(connection, new MySqlServerVersion(new Version(8, 0, 25))));
-#endregion
-
-// Add services to the container.
-builder.Services.AddControllersWithViews();
-
-builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
-    .AddEntityFrameworkStores<MySQLContext>()
-    .AddDefaultTokenProviders();
-
-var bld = builder.Services.AddIdentityServer(options =>
+namespace GeekShopping.IdentityServer
 {
-    options.Events.RaiseErrorEvents = true;
-    options.Events.RaiseInformationEvents = true;
-    options.Events.RaiseFailureEvents = true;
-    options.Events.RaiseSuccessEvents = true;
-    options.EmitStaticAudienceClaim = true;
-}).AddInMemoryIdentityResources(
-   IdentityConfiguration.IdentityResources)
-   .AddInMemoryApiScopes(IdentityConfiguration.ApiScopes)
-   .AddInMemoryClients(IdentityConfiguration.Clients)
-   .AddAspNetIdentity<ApplicationUser>();
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            CreateHostBuilder(args).Build().Run();
+        }
 
-builder.Services.AddScoped<IDbInitializer, DbInitializer>();
-builder.Services.AddScoped<IProfileService, ProfileService>();
-
-bld.AddDeveloperSigningCredential();
-
-var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
-{
-    app.UseExceptionHandler("/Home/Error");
+        public static IHostBuilder CreateHostBuilder(string[] args) =>
+            Host.CreateDefaultBuilder(args)
+                .ConfigureWebHostDefaults(webBuilder =>
+                {
+                    webBuilder.UseStartup<Startup>();
+                });
+    }
 }
-app.UseHttpsRedirection();
-
-app.UseStaticFiles();
-
-app.UseRouting();
-
-app.UseIdentityServer();
-
-app.UseAuthorization();
-
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
-
-var dbInitializeService = app.Services.CreateScope().ServiceProvider.GetService<IDbInitializer>();
-
-#pragma warning disable CS8602 // Dereference of a possibly null reference.
-dbInitializeService.Initialize();
-
-app.Run();
