@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lCoqeI3rQIUzF9zmg4XkeFmmCDry75Xuk3UlXGHLVF09BJhSfK4F+0fo/URt0ScSNTXmOHXUn82srZ+k/FUKOw==",
+  "dgSpecHash": "4gz8LQ7ECs/IRDlSk7axEAt5ESJd9pu48/Cn2GpYMZqryfqyM83ZlICpJfOngRQnbLLEMr8dEAKXGjqy6ouSMg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\cleidson.silva\\Desktop\\S13_ErudioMicroservices.NET6-DevelopingShoppingCartMicrosservice\\GeekShooping\\GeekShopping.CartAPI\\GeekShopping.CartAPI.csproj",
+  "projectFilePath": "C:\\Users\\cleidson.silva\\Desktop\\GeekShopping\\Geek_Shopping\\GeekShopping.CartAPI\\GeekShopping.CartAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cleidson.silva\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\cleidson.silva\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

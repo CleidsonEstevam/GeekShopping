@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cleidson.silva\\Desktop\\S13_ErudioMicroservices.NET6-DevelopingShoppingCartMicrosservice\\GeekShooping\\GeekShopping.ProductAPI\\GeekShopping.ProductAPI.csproj": {}
+    "C:\\Users\\cleidson.silva\\Desktop\\GeekShopping\\Geek_Shopping\\GeekShopping.ProductAPI\\GeekShopping.ProductAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cleidson.silva\\Desktop\\S13_ErudioMicroservices.NET6-DevelopingShoppingCartMicrosservice\\GeekShooping\\GeekShopping.ProductAPI\\GeekShopping.ProductAPI.csproj": {
+    "C:\\Users\\cleidson.silva\\Desktop\\GeekShopping\\Geek_Shopping\\GeekShopping.ProductAPI\\GeekShopping.ProductAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cleidson.silva\\Desktop\\S13_ErudioMicroservices.NET6-DevelopingShoppingCartMicrosservice\\GeekShooping\\GeekShopping.ProductAPI\\GeekShopping.ProductAPI.csproj",
+        "projectUniqueName": "C:\\Users\\cleidson.silva\\Desktop\\GeekShopping\\Geek_Shopping\\GeekShopping.ProductAPI\\GeekShopping.ProductAPI.csproj",
         "projectName": "GeekShopping.ProductAPI",
-        "projectPath": "C:\\Users\\cleidson.silva\\Desktop\\S13_ErudioMicroservices.NET6-DevelopingShoppingCartMicrosservice\\GeekShooping\\GeekShopping.ProductAPI\\GeekShopping.ProductAPI.csproj",
+        "projectPath": "C:\\Users\\cleidson.silva\\Desktop\\GeekShopping\\Geek_Shopping\\GeekShopping.ProductAPI\\GeekShopping.ProductAPI.csproj",
         "packagesPath": "C:\\Users\\cleidson.silva\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cleidson.silva\\Desktop\\S13_ErudioMicroservices.NET6-DevelopingShoppingCartMicrosservice\\GeekShooping\\GeekShopping.ProductAPI\\obj\\",
+        "outputPath": "C:\\Users\\cleidson.silva\\Desktop\\GeekShopping\\Geek_Shopping\\GeekShopping.ProductAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\cleidson.silva\\AppData\\Roaming\\NuGet\\NuGet.Config",

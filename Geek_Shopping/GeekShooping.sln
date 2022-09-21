@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31521.260
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FrontEnd", "FrontEnd", "{5D7D01B6-30E0-4552-BE0E-6EE1577B5FA7}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - UI", "1 - UI", "{5D7D01B6-30E0-4552-BE0E-6EE1577B5FA7}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{BE8F341D-1378-4B40-88F9-6901B74F17C3}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Services", "2 - Services", "{BE8F341D-1378-4B40-88F9-6901B74F17C3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeekShopping.Web", "GeekShopping.Web\GeekShopping.Web.csproj", "{5F676414-A1E7-4180-96F6-C7479B1100A8}"
 EndProject
@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeekShopping.ProductAPI", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeekShopping.IdentityServer", "GeekShopping.IdentityServer\GeekShopping.IdentityServer.csproj", "{59F64765-2AFF-49BE-80E9-3DFF41F85D22}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeekShopping.CartAPI", "GeekShopping.CartAPI\GeekShopping.CartAPI.csproj", "{FDDB28BA-35E7-4D5B-884D-F5BC0EFE865E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeekShopping.CartAPI", "GeekShopping.CartAPI\GeekShopping.CartAPI.csproj", "{FDDB28BA-35E7-4D5B-884D-F5BC0EFE865E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -2436,11 +2436,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cleidson.silva\\Desktop\\S13_ErudioMicroservices.NET6-DevelopingShoppingCartMicrosservice\\GeekShooping\\GeekShopping.IdentityServer\\GeekShopping.IdentityServer.csproj",
+      "projectUniqueName": "C:\\Users\\cleidson.silva\\Desktop\\GeekShopping\\Geek_Shopping\\GeekShopping.IdentityServer\\GeekShopping.IdentityServer.csproj",
       "projectName": "GeekShopping.IdentityServer",
-      "projectPath": "C:\\Users\\cleidson.silva\\Desktop\\S13_ErudioMicroservices.NET6-DevelopingShoppingCartMicrosservice\\GeekShooping\\GeekShopping.IdentityServer\\GeekShopping.IdentityServer.csproj",
+      "projectPath": "C:\\Users\\cleidson.silva\\Desktop\\GeekShopping\\Geek_Shopping\\GeekShopping.IdentityServer\\GeekShopping.IdentityServer.csproj",
       "packagesPath": "C:\\Users\\cleidson.silva\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cleidson.silva\\Desktop\\S13_ErudioMicroservices.NET6-DevelopingShoppingCartMicrosservice\\GeekShooping\\GeekShopping.IdentityServer\\obj\\",
+      "outputPath": "C:\\Users\\cleidson.silva\\Desktop\\GeekShopping\\Geek_Shopping\\GeekShopping.IdentityServer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\cleidson.silva\\AppData\\Roaming\\NuGet\\NuGet.Config",

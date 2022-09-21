@@ -1622,11 +1622,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cleidson.silva\\Desktop\\S13_ErudioMicroservices.NET6-DevelopingShoppingCartMicrosservice\\GeekShooping\\GeekShopping.CartAPI\\GeekShopping.CartAPI.csproj",
+      "projectUniqueName": "C:\\Users\\cleidson.silva\\Desktop\\GeekShopping\\Geek_Shopping\\GeekShopping.CartAPI\\GeekShopping.CartAPI.csproj",
       "projectName": "GeekShopping.CartAPI",
-      "projectPath": "C:\\Users\\cleidson.silva\\Desktop\\S13_ErudioMicroservices.NET6-DevelopingShoppingCartMicrosservice\\GeekShooping\\GeekShopping.CartAPI\\GeekShopping.CartAPI.csproj",
+      "projectPath": "C:\\Users\\cleidson.silva\\Desktop\\GeekShopping\\Geek_Shopping\\GeekShopping.CartAPI\\GeekShopping.CartAPI.csproj",
       "packagesPath": "C:\\Users\\cleidson.silva\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cleidson.silva\\Desktop\\S13_ErudioMicroservices.NET6-DevelopingShoppingCartMicrosservice\\GeekShooping\\GeekShopping.CartAPI\\obj\\",
+      "outputPath": "C:\\Users\\cleidson.silva\\Desktop\\GeekShopping\\Geek_Shopping\\GeekShopping.CartAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\cleidson.silva\\AppData\\Roaming\\NuGet\\NuGet.Config",
