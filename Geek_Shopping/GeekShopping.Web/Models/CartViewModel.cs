@@ -2,7 +2,7 @@
 
 namespace GeekShopping.Web.Models
 {
-    public class CartViweModel
+    public class CartViewModel
     {
         public CartHeaderViewModel CartHeader { get; set; }
         public IEnumerable<CartDetailViewModel> CartDetails { get; set; }
