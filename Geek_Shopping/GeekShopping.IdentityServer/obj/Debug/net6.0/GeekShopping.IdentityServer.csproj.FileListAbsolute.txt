@@ -1471,3 +1471,4 @@ C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Identity
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.IdentityServer\obj\Debug\net6.0\GeekShopping.IdentityServer.pdb
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.IdentityServer\obj\Debug\net6.0\GeekShopping.IdentityServer.genruntimeconfig.cache
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.IdentityServer\obj\Debug\net6.0\ref\GeekShopping.IdentityServer.dll
+C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.IdentityServer\bin\Debug\net6.0\keys\is-signing-key-B54978F0EEA8BABF6D719C9C6AE6808F.json
