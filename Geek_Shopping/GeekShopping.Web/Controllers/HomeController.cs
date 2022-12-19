@@ -16,12 +16,17 @@ namespace GeekShopping.Web.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly IProductService _productService;
+        private readonly ICartService _cartService;
+
+
 
         public HomeController(ILogger<HomeController> logger,
             IProductService productService)
         {
             _logger = logger;
             _productService = productService;
+            _cartService     = _cartService;
+
         }
 
         public async Task<IActionResult> Index()
@@ -29,12 +34,51 @@ namespace GeekShopping.Web.Controllers
             var products = await _productService.FindAllProducts("");
             return View(products);
         }
-
         [Authorize]
         public async Task<IActionResult> Details(int id)
         {
             var token = await HttpContext.GetTokenAsync("access_token");
             var model = await _productService.FindProductById(id, token);
+            return View(model);
+        }
+
+        [HttpPost]
+        [ActionName("Details")]
+        [Authorize]
+        public async Task<IActionResult> DetailsPost(ProductViewModel model)
+        {
+            //pegar token
+            var token = await HttpContext.GetTokenAsync("access_token");
+
+            //Modelo com o Header do carrinho 
+            CartViewModel cart = new()
+            {
+                CartHeader = new CartHeaderViewModel
+                {
+                    UserId = User.Claims.Where(u => u.Type == "sub")?.FirstOrDefault()?.Value
+                }
+            };
+
+            //Detalhes do carrinho 
+            CartDetailViewModel cartDatail = new CartDetailViewModel()
+            {
+                Count = model.Count,
+                ProductId = model.Id,
+                Product = await _productService.FindProductById(model.Id, token)
+            };
+
+            //Add os detalhes a uma lista 
+            List<CartDetailViewModel> cartDetails = new List<CartDetailViewModel>();
+            cartDetails.Add(cartDatail);
+            cart.CartDetails = cartDetails;
+
+            //Enviar carrinho para o banco 
+            var response = _cartService.AddItemToCart(cart, token);
+            if (response != null)
+            {
+                return RedirectToAction(nameof(Index));
+            }
+
             return View(model);
         }
 

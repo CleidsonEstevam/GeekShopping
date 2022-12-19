@@ -32,15 +32,15 @@ namespace GeekShopping.IdentityServer.Initializer
 
             ApplicationUser admin = new ApplicationUser()
             {
-                UserName = "leandro-admin",
-                Email = "leandro-admin@erudio.com.br",
+                UserName = "cleidson.admin",
+                Email = "cleidson_admin@geek.com",
                 EmailConfirmed = true,
-                PhoneNumber = "+55 (34) 12345-6789",
-                FirstName = "Leandro",
+                PhoneNumber = "+55 (14) 98819-1240",
+                FirstName = "Cleidson",
                 LastName = "Admin"
             };
 
-            _user.CreateAsync(admin, "Erudio123$").GetAwaiter().GetResult();
+            _user.CreateAsync(admin, "Cleidson123$").GetAwaiter().GetResult();
             _user.AddToRoleAsync(admin,
                 IdentityConfiguration.Admin).GetAwaiter().GetResult();
             var adminClaims = _user.AddClaimsAsync(admin, new Claim[]
@@ -53,15 +53,15 @@ namespace GeekShopping.IdentityServer.Initializer
 
             ApplicationUser client = new ApplicationUser()
             {
-                UserName = "leandro-client",
-                Email = "leandro-client@erudio.com.br",
+                UserName = "cleidson.client",
+                Email = "cleidson_client@geek.com",
                 EmailConfirmed = true,
-                PhoneNumber = "+55 (34) 12345-6789",
-                FirstName = "Leandro",
+                PhoneNumber = "+55 (14) 98819-1240",
+                FirstName = "Cleidson",
                 LastName = "Client"
             };
 
-            _user.CreateAsync(client, "Erudio123$").GetAwaiter().GetResult();
+            _user.CreateAsync(client, "Cleidson123$").GetAwaiter().GetResult();
             _user.AddToRoleAsync(client,
                 IdentityConfiguration.Client).GetAwaiter().GetResult();
             var clientClaims = _user.AddClaimsAsync(client, new Claim[]
