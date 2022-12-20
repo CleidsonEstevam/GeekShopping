@@ -21,12 +21,11 @@ namespace GeekShopping.Web.Controllers
 
 
         public HomeController(ILogger<HomeController> logger,
-            IProductService productService)
+            IProductService productService, ICartService cartService)
         {
             _logger = logger;
             _productService = productService;
-            _cartService     = _cartService;
-
+            _cartService    = cartService;
         }
 
         public async Task<IActionResult> Index()
@@ -47,10 +46,19 @@ namespace GeekShopping.Web.Controllers
         [Authorize]
         public async Task<IActionResult> DetailsPost(ProductViewModel model)
         {
+
             //pegar token
             var token = await HttpContext.GetTokenAsync("access_token");
 
             //Modelo com o Header do carrinho 
+            CartDetailViewModel cartDetail = new CartDetailViewModel()
+            {
+                Count = model.Count,
+                ProductId = model.Id,
+                Product = await _productService.FindProductById(model.Id, token)
+            };
+
+            //Detalhes do carrinho
             CartViewModel cart = new()
             {
                 CartHeader = new CartHeaderViewModel
@@ -59,26 +67,18 @@ namespace GeekShopping.Web.Controllers
                 }
             };
 
-            //Detalhes do carrinho 
-            CartDetailViewModel cartDatail = new CartDetailViewModel()
-            {
-                Count = model.Count,
-                ProductId = model.Id,
-                Product = await _productService.FindProductById(model.Id, token)
-            };
-
             //Add os detalhes a uma lista 
             List<CartDetailViewModel> cartDetails = new List<CartDetailViewModel>();
-            cartDetails.Add(cartDatail);
+            cartDetails.Add(cartDetail);
             cart.CartDetails = cartDetails;
 
             //Enviar carrinho para o banco 
-            var response = _cartService.AddItemToCart(cart, token);
+            var response = await _cartService.AddItemToCart(cart, token);
+
             if (response != null)
             {
                 return RedirectToAction(nameof(Index));
             }
-
             return View(model);
         }
 
