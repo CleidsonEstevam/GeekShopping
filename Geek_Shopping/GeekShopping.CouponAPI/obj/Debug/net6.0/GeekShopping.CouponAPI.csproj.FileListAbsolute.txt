@@ -1,0 +1,7 @@
+C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.CouponAPI\obj\Debug\net6.0\GeekShopping.CouponAPI.csproj.AssemblyReference.cache
+C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.CouponAPI\obj\Debug\net6.0\GeekShopping.CouponAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.CouponAPI\obj\Debug\net6.0\GeekShopping.CouponAPI.AssemblyInfoInputs.cache
+C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.CouponAPI\obj\Debug\net6.0\GeekShopping.CouponAPI.AssemblyInfo.cs
+C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.CouponAPI\obj\Debug\net6.0\GeekShopping.CouponAPI.csproj.CoreCompileInputs.cache
+C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.CouponAPI\obj\Debug\net6.0\GeekShopping.CouponAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.CouponAPI\obj\Debug\net6.0\GeekShopping.CouponAPI.MvcApplicationPartsAssemblyInfo.cache
