@@ -6,7 +6,6 @@ namespace GeekShopping.CartAPI.Model
     [Table("cart_detail")]
     public class CartDetail : BaseEntity
     {
-
         public long CartHeaderId { get; set; }
 
         [ForeignKey("CartHeaderId")]

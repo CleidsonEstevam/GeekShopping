@@ -89,7 +89,8 @@ namespace GeekShopping.CartAPI.Repository
         public async Task<CartVO> SaveOrUpdateCart(CartVO vo)
         {
             Cart cart = _mapper.Map<Cart>(vo);
-            //Checks if the product is already saved in the database if it does not exist then save
+
+            //Verifica se o produto já existe na tabela, caso não insere.
             var product = await _context.Products.FirstOrDefaultAsync(
                 p => p.Id == vo.CartDetails.FirstOrDefault().ProductId);
 
@@ -99,7 +100,7 @@ namespace GeekShopping.CartAPI.Repository
                 await _context.SaveChangesAsync();
             }
 
-            //Check if CartHeader is null
+            //Verifica se o cabeçalho do carrinho é nulo
             var cartHeader = await _context.CartHeaders.AsNoTracking().FirstOrDefaultAsync(
                 c => c.UserId == cart.CartHeader.UserId);
 
@@ -115,15 +116,14 @@ namespace GeekShopping.CartAPI.Repository
             }
             else
             {
-                //If CartHeader is not null
-                //Check if CartDetails has same product
+                //Se o cabeçalho não for null verifica se o produto é o mesmo
                 var cartDetail = await _context.CartDetails.AsNoTracking().FirstOrDefaultAsync(
                     p => p.ProductId == cart.CartDetails.FirstOrDefault().ProductId &&
                     p.CartHeaderId == cartHeader.Id);
 
                 if (cartDetail == null)
                 {
-                    //Create CartDetails
+                    //Cria o detalhe da adição do item
                     cart.CartDetails.FirstOrDefault().CartHeaderId = cartHeader.Id;
                     cart.CartDetails.FirstOrDefault().Product = null;
                     _context.CartDetails.Add(cart.CartDetails.FirstOrDefault());
@@ -131,7 +131,7 @@ namespace GeekShopping.CartAPI.Repository
                 }
                 else
                 {
-                    //Update product count and CartDetails
+                    //Da update no produto e na quantidade e no detalhe
                     cart.CartDetails.FirstOrDefault().Product = null;
                     cart.CartDetails.FirstOrDefault().Count += cartDetail.Count;
                     cart.CartDetails.FirstOrDefault().Id = cartDetail.Id;

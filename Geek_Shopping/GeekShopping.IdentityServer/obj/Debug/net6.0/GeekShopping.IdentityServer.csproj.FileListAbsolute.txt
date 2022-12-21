@@ -1102,7 +1102,6 @@ C:\Users\cleidson.silva\Desktop\S13_ErudioMicroservices.NET6-DevelopingShoppingC
 C:\Users\cleidson.silva\Desktop\S13_ErudioMicroservices.NET6-DevelopingShoppingCartMicrosservice\GeekShooping\GeekShopping.IdentityServer\obj\Debug\net6.0\GeekShopping.IdentityServer.pdb
 C:\Users\cleidson.silva\Desktop\S13_ErudioMicroservices.NET6-DevelopingShoppingCartMicrosservice\GeekShooping\GeekShopping.IdentityServer\obj\Debug\net6.0\GeekShopping.IdentityServer.genruntimeconfig.cache
 C:\Users\cleidson.silva\Desktop\S13_ErudioMicroservices.NET6-DevelopingShoppingCartMicrosservice\GeekShooping\GeekShopping.IdentityServer\obj\Debug\net6.0\ref\GeekShopping.IdentityServer.dll
-C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.IdentityServer\bin\Debug\net6.0\refs\System.Security.Cryptography.Encoding.dll
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.IdentityServer\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.IdentityServer\bin\Debug\net6.0\appsettings.json
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.IdentityServer\bin\Debug\net6.0\keys\is-signing-key-232EC1D6C2AB92E2AB2AC17B48A19BD5.json
@@ -1360,6 +1359,7 @@ C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Identity
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.IdentityServer\bin\Debug\net6.0\refs\System.Security.Cryptography.Algorithms.dll
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.IdentityServer\bin\Debug\net6.0\refs\System.Security.Cryptography.Cng.dll
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.IdentityServer\bin\Debug\net6.0\refs\System.Security.Cryptography.Csp.dll
+C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.IdentityServer\bin\Debug\net6.0\refs\System.Security.Cryptography.Encoding.dll
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.IdentityServer\bin\Debug\net6.0\refs\System.Security.Cryptography.OpenSsl.dll
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.IdentityServer\bin\Debug\net6.0\refs\System.Security.Cryptography.Primitives.dll
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.IdentityServer\bin\Debug\net6.0\refs\System.Security.Cryptography.X509Certificates.dll
