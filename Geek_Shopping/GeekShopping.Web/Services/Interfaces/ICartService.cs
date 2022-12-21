@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace GeekShopping.Web.Services.IServices
 {
-    public interface ICartService
+    public interface ICartService 
     {
         Task<CartViewModel> FindCartByUserId(string userId, string token);
         Task<CartViewModel> AddItemToCart(CartViewModel cart, string token);
