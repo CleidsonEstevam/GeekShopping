@@ -5,10 +5,8 @@ namespace GeekShopping.CouponAPI.Model.Base
 {
     public class BaseEntity
     {
-
         [Key]
         [Column("id")]
         public long Id { get; set; }
-
     }
 }
