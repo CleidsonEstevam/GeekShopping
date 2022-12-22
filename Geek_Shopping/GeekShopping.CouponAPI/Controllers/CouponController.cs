@@ -1,12 +1,31 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using GeekShopping.CouponAPI.Model;
+using GeekShopping.CouponAPI.Repository;
+using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Threading.Tasks;
 
 namespace GeekShopping.CouponAPI.Controllers
 {
-    public class CouponController : Controller
+
+    [Route("api/v1/[controller]")]
+    [ApiController]
+    public class CouponController : ControllerBase
     {
-        public IActionResult Index()
+        private ICouponRepository _couponRepository;
+
+
+        public CouponController(ICouponRepository couponRepository)
         {
-            return View();
+            _couponRepository = couponRepository ?? throw new
+                ArgumentNullException(nameof(couponRepository));
+        }
+
+        public async Task<ActionResult<CouponVo>> GetCouponByCouponCode(string id) 
+        {
+            var coupon = await _couponRepository.GetCouponByCouponCode(id);
+            if (coupon == null) return NotFound();
+            
+            return Ok(coupon);  
         }
     }
 }

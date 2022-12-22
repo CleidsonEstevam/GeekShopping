@@ -6,7 +6,7 @@ namespace GeekShopping.CouponAPI.Model
 {
 
     [Table("coupon")]
-    public class Coupon : BaseEntity
+    public class CouponVo : BaseEntity
     {
         [Column("coupon_code")]
         [Required]
