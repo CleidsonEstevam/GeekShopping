@@ -9,5 +9,6 @@ namespace GeekShopping.CouponAPI.Model.Base
         [Key]
         [Column("id")]
         public long Id { get; set; }
+
     }
 }
