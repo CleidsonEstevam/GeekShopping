@@ -8,7 +8,7 @@ using GeekShopping.Web.Utils;
 using System.Reflection;
 
 namespace GeekShopping.Web.Services
-{
+{ 
     public class CartService : ICartService
     {
         private readonly HttpClient _client;
