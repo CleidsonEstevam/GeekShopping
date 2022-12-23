@@ -20,6 +20,7 @@ namespace GeekShopping.CouponAPI.Controllers
                 ArgumentNullException(nameof(couponRepository));
         }
 
+        [HttpGet("{couponCode}")]
         public async Task<ActionResult<CouponVo>> GetCouponByCouponCode(string id) 
         {
             var coupon = await _couponRepository.GetCouponByCouponCode(id);

@@ -54,5 +54,14 @@ namespace GeekShopping.CartAPI.Controllers
             if (!status) return BadRequest();
             return Ok(status);
         }
+
+
+        [HttpPost("apply-coupon")]
+        public async Task<ActionResult<CartVO>> ApplyCoupon(CartVO vo)
+        {
+            var status = await _cartRepository.ApplyCoupon(vo.CartHeader.UserId, vo.CartHeader.CouponCode);
+            if (!status) return NotFound();
+            return Ok(status);
+        }
     }
 }
