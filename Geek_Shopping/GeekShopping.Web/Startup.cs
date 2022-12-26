@@ -1,4 +1,5 @@
 using GeekShopping.Web.Services;
+using GeekShopping.Web.Services.Interfaces;
 using GeekShopping.Web.Services.IServices;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Builder;
@@ -31,9 +32,9 @@ namespace GeekShopping.Web
             services.AddHttpClient<ICartService, CartService>(c =>
                    c.BaseAddress = new Uri(Configuration["ServiceUrls:CartAPI"])
                );
-            //services.AddHttpClient<ICouponService, CouponService>(c =>
-            //    c.BaseAddress = new Uri(Configuration["ServiceUrls:CouponAPI"])
-            //);
+            services.AddHttpClient<ICouponService, CouponService>(c =>
+                c.BaseAddress = new Uri(Configuration["ServiceUrls:CouponAPI"])
+            );
             services.AddControllersWithViews();
             services.AddAuthentication(options =>
             {
