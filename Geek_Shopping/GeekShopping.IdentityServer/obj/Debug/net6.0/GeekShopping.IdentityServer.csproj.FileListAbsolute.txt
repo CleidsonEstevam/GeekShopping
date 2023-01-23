@@ -1106,7 +1106,6 @@ C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.Identity
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.IdentityServer\bin\Debug\net6.0\appsettings.json
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.IdentityServer\bin\Debug\net6.0\keys\is-signing-key-232EC1D6C2AB92E2AB2AC17B48A19BD5.json
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.IdentityServer\bin\Debug\net6.0\keys\is-signing-key-55F38374D1143E3C0E73E7420FF2ED72.json
-C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.IdentityServer\bin\Debug\net6.0\keys\is-signing-key-B54978F0EEA8BABF6D719C9C6AE6808F.json
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.IdentityServer\bin\Debug\net6.0\keys\is-signing-key-C05AE8661ABF2DC369385ECA35466866.json
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.IdentityServer\bin\Debug\net6.0\GeekShopping.IdentityServer.staticwebassets.runtime.json
 C:\Users\cleidson.silva\Desktop\GeekShopping\Geek_Shopping\GeekShopping.IdentityServer\bin\Debug\net6.0\GeekShopping.IdentityServer.exe
